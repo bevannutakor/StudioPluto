@@ -60,17 +60,23 @@ video {
 .our-work-row{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
     width: 100%;
+    padding: 20px;
 }
 
 .our-work-border{
     background-color: #4B4B4B;
     content: "none";
-    width: 113px;
-    height: 88px;
+    height: 30vh;
+    grid-gap: 50px;
+    padding: 30px;
+    border-radius: 20px;
 
 }
 
 .our-work-content{
+    background-color: white;
+    height: 20vh;
     width: 100%;
 }
