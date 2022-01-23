@@ -33,7 +33,6 @@ p {
     text-align: center;
     color: white;
 }
-<<<<<<< Updated upstream
 video {
     position: fixed;
     /* height: 100vmin; */
@@ -46,7 +45,6 @@ video {
     filter: brightness(0.8) contrast(19) grayscale(1);
     pointer-events: none;
     }
-=======
 
 .our-work-title{
     text-align: center;
@@ -77,4 +75,3 @@ video {
 .our-work-content{
     width: 100%;
 }
->>>>>>> Stashed changes
