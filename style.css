@@ -1,7 +1,33 @@
+html, body {
+    height: 100%;
+}
+  
 body {
+    margin: 0;
     background-color: black;
 }
-h1 {
+  
+nav {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+  
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 40px;
+}
+  
+#logo {
+    width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+p {
     text-align: center;
     color: white;
 }
