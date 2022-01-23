@@ -44,3 +44,33 @@ video {
     filter: brightness(0.8) contrast(19) grayscale(1);
     pointer-events: none;
     }
+
+.our-work-title{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.our-work-container{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.our-work-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.our-work-border{
+    background-color: #4B4B4B;
+    content: "none";
+    width: 113px;
+    height: 88px;
+
+}
+
+.our-work-content{
+    width: 100%;
+}
