@@ -35,7 +35,8 @@ a:hover {
     margin-right: auto;
     width: 45%;
 }
-p {
+h3 {
+    font-style: normal;
     text-align: center;
     color: white;
 }
@@ -133,3 +134,17 @@ video {
     border-radius: 50%;
     display: inline-block;
 }
+.dot {
+    background-color: transparent;
+    border: 1px solid #662087;    
+    height: 500px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 500px;
+  }
+  .come {
+    position: relative;
+    text-align: center;
+    top: 38vh;
+  }
