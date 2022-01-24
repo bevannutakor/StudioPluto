@@ -81,8 +81,6 @@ video {
     grid-gap: 50px;
     padding: 30px;
     border-radius: 20px;
-
-
 }
 
 .our-work-content{
@@ -111,6 +109,14 @@ video {
     background-position: center;
     background-size: 100%; 
 }
+
+.sah-background{
+    background-image: url("SAH.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 .red-dot{
     height: 15px;
     width: 15px;
