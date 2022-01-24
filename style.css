@@ -48,6 +48,7 @@ video {
 .our-work-title{
     text-align: center;
     color: rgb(255, 255, 255);
+    margin-top: 6vh;
 }
 
 .our-work-container{
@@ -68,15 +69,60 @@ video {
 .our-work-border{
     background-color: #4B4B4B;
     content: "none";
-    height: 30vh;
+    height: 33vh;
     grid-gap: 50px;
     padding: 30px;
     border-radius: 20px;
 
+
 }
 
 .our-work-content{
-    background-color: white;
-    height: 20vh;
+    height: 29vh;
     width: 100%;
+    border-radius: 20px;
+    margin-top: 2vh;
+}
+.cancerblake-background{
+    background-image: url("cancerblake.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+}
+
+.offwhite-background{
+    background-image: url("off-white.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+}
+
+.arrian-background{
+    background-image: url("arrian.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+}
+.red-dot{
+    height: 15px;
+    width: 15px;
+    background-color: FF0000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.yellow-dot{
+    height: 15px;
+    width: 15px;
+    background-color: DFE300;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green-dot{
+    height: 15px;
+    width: 15px;
+    background-color: 42FF00;
+    border-radius: 50%;
+    display: inline-block;
 }
