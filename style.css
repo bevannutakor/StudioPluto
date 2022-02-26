@@ -40,6 +40,33 @@ h3 {
     text-align: center;
     color: white;
 }
+#headp {
+    margin-top: 500px;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#midp {
+    margin-top: 250px;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#oval {
+    margin-top: -110px;
+    height: 150px;
+    width: 400px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    border: 1px solid #662087;
+    background: none; 
+    position: relative;
+    z-index: -1;
+}
 video {
     position: fixed;
     /* height: 100vmin; */
@@ -52,7 +79,33 @@ video {
     filter: brightness(0.8) contrast(19) grayscale(1);
     pointer-events: none;
     }
-
+#first{
+    text-align:left;
+    width:200px;
+    height:200px;
+    float:left;
+    color:white;
+    }
+#second{
+    text-align:center;
+    width:200px;
+    height:200px;
+    float:left;
+    color:white;
+    margin-left:30px;
+    }
+#third{
+    text-align:right;
+    width:200px;
+    height:200px;
+    float:left;
+    color:white;
+    margin-left:30px;
+    }
+#founders {
+    margin-top: 50px;
+}
+/* end of main page css */
 .our-work-title{
     text-align: center;
     color: rgb(255, 255, 255);
@@ -148,3 +201,4 @@ video {
     text-align: center;
     top: 38vh;
   }
+  
