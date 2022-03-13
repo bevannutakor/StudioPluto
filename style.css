@@ -35,6 +35,9 @@ a:hover {
     margin-right: auto;
     width: 45%;
 }
+#planet {
+    margin-top: 140px;
+}
 h3 {
     font-style: normal;
     text-align: center;
@@ -49,7 +52,7 @@ h3 {
     text-align: center;
 }
 #midp {
-    margin-top: 250px;
+    margin-top: 230px;
     font-style: normal;
     text-decoration: none;
     color: white;
@@ -78,32 +81,54 @@ video {
     z-index: -2;
     filter: brightness(0.8) contrast(19) grayscale(1);
     pointer-events: none;
-    }
-#first{
-    text-align:left;
-    width:200px;
-    height:200px;
-    float:left;
-    color:white;
-    }
-#second{
-    text-align:center;
-    width:200px;
-    height:200px;
-    float:left;
-    color:white;
-    margin-left:30px;
-    }
-#third{
-    text-align:right;
-    width:200px;
-    height:200px;
-    float:left;
-    color:white;
-    margin-left:30px;
-    }
+}
+p {
+    color: white;
+    font-size: 15pt;
+}
+.wrapper { 
+    width: 750px;
+    margin-top: 50px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper .test { 
+    width: 200px; display: inline-block; margin: 0 20px; 
+}
+.wrapper .test p { 
+    text-align: center; 
+}
 #founders {
     margin-top: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    background-color: #662087; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: transparent; 
+    color: WHITE; 
+    border: 2px solid #662087;
+    border-radius: 30px;
+  }
+.but {
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 14%;
 }
 /* end of main page css */
 .our-work-title{
