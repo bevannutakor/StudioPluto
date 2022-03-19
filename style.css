@@ -143,28 +143,28 @@ video {
     margin-top: 2vh;
 }
 .cancerblake-background{
-    background-image: url("cancerblake.png");
+    background-image: url("./src/cancerblake.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%; 
 }
 
 .offwhite-background{
-    background-image: url("off-white.gif");
+    background-image: url("./src/off-white.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%; 
 }
 
 .arrian-background{
-    background-image: url("arrian.gif");
+    background-image: url("./src/arrian.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%; 
 }
 
 .sah-background{
-    background-image: url("SAH.png");
+    background-image: url("./src/SAH.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
