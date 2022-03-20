@@ -9,29 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="web.htm">WEB WORK</a>
-        <a href="index.htm"><img id="logo" src="./src/PlutoLogo.png" alt="Logo"></a>
-        <a href="meta.htm">METAVERSE</a>
-    </nav>
-    <div id="planet"><img src="./src/realplanet.gif" alt="pluto!" class="center"></div>
-    <p id="headp">PROPEL YOUR BRAND INTO THE FUTURE</p>
-    <p id="midp">WHO WE ARE + WHAT WE DO</p>
-    <div id="oval" class="center"></div>
-    <div class="wrapper">
-      <div class="test">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>    
-      </div>
-      <div class="test">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>    
-      </div>
-      <div class="test">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>    
-      </div>
+  <div class="home-container">
+      <nav>
+            <a href="web.htm">WEB WORK</a>
+            <a href="index.htm"><img id="logo" src="./src/PlutoLogo.png" alt="Logo"></a>
+            <a href="meta.htm">METAVERSE</a>
+        </nav>
+
+        <p id="headp">PROPEL YOUR BRAND INTO THE FUTURE</p>
+        <p id="midp">WHO WE ARE + WHAT WE DO</p>
+        <div id="oval" class="center"></div>
+        <div class="wrapper">
+          <div class="test">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>    
+          </div>
+          <div class="test">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>    
+          </div>
+          <div class="test">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>    
+          </div>
+        </div>
+          <div id="founders"><img src="./src/founders.png" alt="Founders" class="center"></div>
+          <div class="but"><button class="button button1"><a href='contact.htm'>LET'S WORK</a></button></div>
     </div>
-      <div id="founders"><img src="./src/founders.png" alt="Founders" class="center"></div>
-      <div class="but"><button class="button button1"><a href='contact.htm'>LET'S WORK</a></button></div>
-    <!--put everything above this on folk-->
-    <video id="bg-video" src="stars.mp4" autoplay="" muted="" loop="" playsinline=""></video>
+      <canvas id="stars" class="stars"></canvas>
+      <canvas id="planet" class="planet"></canvas>
 </body>
 </html>
+<script type="module" src="/main.js"></script>
