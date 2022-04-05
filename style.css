@@ -10,28 +10,68 @@ body {
 
 canvas {
     display: flex;
-    position: absolute;
-    z-index: -1;
     width: 100%;
+    height: 100%;
 }
 
 .stars{
+    z-index: -1;
     position: fixed;
+    height: 100%;
+}
+
+#planet{
+    animation-name: planet-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    position: relative;
 }
 
 .home-container{
     position: absolute;
-    width: 100%;
     z-index: 1;
+    display: flex;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.inner-container{
+   display: flex;
+   flex-direction: row;
+   width: 400vw;
+   transform: rotate(90deg) translateY(-100vh) ;
+   transform-origin: top left;
+
 }
 nav {
     display: flex;
     width: 100%;
-    height: 20%;
+    height: 10%;
     background: transparent;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid white;
+    position: fixed;
+    z-index: 2;
 }
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
     color: rgb(226, 226, 226);
@@ -41,7 +81,7 @@ a {
 a:hover {
     color: rgb(255, 255, 255);
 }
-#logo {
+.logo {
     width: 150px;
     margin-left: 100px;
     margin-right: 100px;
@@ -59,33 +99,63 @@ h3 {
     text-align: center;
     color: white;
 }
-#headp {
-    margin-top: 500px;
+.headp {
+    margin-top: 90vh;
     font-style: normal;
     text-decoration: none;
     color: white;
     font-size: 30px;
     text-align: center;
 }
-#midp {
-    margin-top: 230px;
+.midp {
     font-style: normal;
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 70px;
     text-align: center;
+    position: absolute;
+    top: -20px;
+    left: 17vw;
 }
-#oval {
-    margin-top: -110px;
+.oval {
+    position: relative;
+    top: -50px;
     height: 150px;
-    width: 400px;
-    border-radius: 50%;
+    width: 1000px;
+    border-radius: 80%;
     transform: rotate(-10deg);
     border: 1px solid #662087;
     background: none; 
     position: relative;
     z-index: -1;
 }
+
+.what-wrapper{
+    border: 1px solid white;
+    border-radius: 15px;
+    position: relative;
+    top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+    padding-top: 30px; 
+}
+
+.arrow{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+/*.grid-row{
+    display: grid;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    width: 100%;
+}*/
+
 video {
     position: fixed;
     /* height: 100vmin; */
@@ -102,7 +172,7 @@ p {
     color: white;
     font-size: 15pt;
 }
-.wrapper { 
+/*.wrapper { 
     width: 750px;
     margin-top: 50px; 
     margin-left: auto;
@@ -113,9 +183,9 @@ p {
 }
 .wrapper .test p { 
     text-align: center; 
-}
-#founders {
-    margin-top: 50px;
+}*/
+.founders {
+    margin-top: 50vh;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -249,3 +319,11 @@ p {
     top: 38vh;
   }
   
+
+
+  /*animations*/
+  @keyframes planet-animation{
+      0%{position: relative; top: -500px; opacity: 0;}
+
+      100%{top:0; opacity: 1;}
+  }
