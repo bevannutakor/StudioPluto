@@ -140,7 +140,7 @@ h3 {
     z-index: 100;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 70vh;
+    height: 80vh;
     padding-top: 30px; 
 }
 
@@ -148,13 +148,22 @@ h3 {
     text-align: center;
     color: white;
     font-size: 50px;
+    
 }
 
-/*.grid-row{
+.what-container{
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.what-grid-row{
     display: grid;
-    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(20px + 5%);
     width: 100%;
-}*/
+}
 
 video {
     position: fixed;
@@ -184,12 +193,25 @@ p {
 .wrapper .test p { 
     text-align: center; 
 }*/
-.founders {
-    margin-top: 50vh;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+
+.founder-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
+
+.founders-image {
+    width: 50vw;
+}
+
+.founders-description{
+    height: 80vh;
+}
+
+.founders-description p{
+    margin-top: 30vh;
+}
+
 .button {
     background-color: #662087; 
     border: none;
@@ -210,13 +232,13 @@ p {
   }
 .but {
     display: block;
-    margin-top: 70px;
-    margin-bottom: 90px;
+    margin-top: 40vh;
     margin-left: auto;
     margin-right: auto;
     width: 14%;
 }
 /* end of main page css */
+
 .our-work-title{
     text-align: center;
     color: rgb(255, 255, 255);
