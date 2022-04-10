@@ -1,2 +1,2 @@
 # StudioPlutoMetaverse
-New Website for Studio Pluto with Metaverse applications coming soon
+New Website for Studio Pluto; Applications in Web3 comming soon
