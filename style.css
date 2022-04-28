@@ -282,6 +282,7 @@ p {
     padding: 30px;
     border-radius: 20px;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .our-work-content{
@@ -356,7 +357,7 @@ p {
     top: 38vh;
   }
 
-  .modal {
+  .modal { 
     position: fixed;  
     display: none; 
     z-index: 3;
@@ -371,7 +372,7 @@ p {
     background-color: rgba(0,0,0,0.4);
   }
 
-  .inner-modal{
+  .inner-modal{   
     position: fixed; 
     left: 50%;
     top: 0; 
@@ -386,6 +387,11 @@ p {
     border-radius: 15px;
     transform: translate(-50%, 0);
     background-color: black
+  }
+
+  .modal-images{
+    width: 100%;  
+    height: 100%;
   }
   
 
