@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="work-body">
     <nav>
         <a href="web.htm">WEB WORK</a>
         <a href="index.html"><img class="logo" src="./src/PlutoLogo.png" alt="Logo"></a>
@@ -15,12 +15,11 @@
     </nav>
     <!--<video id="bg-video" src="stars.mp4" autoplay="" muted="" loop="" playsinline=""></video>-->
    <div class="web-container">
-    <h1 class="our-work-title">Our Work</h1>
+        <!--<h1 class="our-work-title">Our Work</h1>-->
 
-    <div class="our-work-container">
-        
+        <div class="our-work-container">
             <div class="our-work-row">
-                <div class="our-work-border">
+                <div class="our-work-border" id="blakeTrigger">
                     <span class="red-dot"></span>
                     <span class="yellow-dot"></span>
                     <span class="green-dot"></span>
@@ -28,7 +27,7 @@
                         
                     </div>
                 </div>
-                <div class="our-work-border">
+                <div class="our-work-border" id="offwhiteTrigger">
                     <span class="red-dot"></span>
                     <span class="yellow-dot"></span>
                     <span class="green-dot"></span>
@@ -36,7 +35,7 @@
                         
                     </div>
                 </div>
-                <div class="our-work-border">
+                <div class="our-work-border" id="lairTrigger">
                     <span class="red-dot"></span>
                     <span class="yellow-dot"></span>
                     <span class="green-dot"></span>
@@ -44,7 +43,7 @@
                         
                     </div>
                 </div>
-                <div class="our-work-border">
+                <div class="our-work-border" id="sahTrigger">
                     <span class="red-dot"></span>
                     <span class="yellow-dot"></span>
                     <span class="green-dot"></span>
@@ -54,8 +53,36 @@
                 </div>
             </div>
         </div>
+
+        <!--Modals-->
+        <div id="blakeModal" class="modal">
+            <div class=inner-modal>
+                <p>cancer blake..</p>
+            </div>
+        </div>
+
+        <div id="offwhiteModal" class="modal">
+            <div class=inner-modal>
+                <p>off white..</p>
+            </div>
+        </div>
+
+        <div id="arriansModal" class="modal">
+            <div class=inner-modal>
+                <p>arrians...</p>
+            </div>
+        </div>
+
+        <div id="sahModal" class="modal">
+            <div class=inner-modal>
+                <p>sah...</p>
+            </div>
+        </div>
+        
+        
     </div>
-    <canvas id="stars" class="stars"></canvas>
+    <!--<canvas id="stars" class="stars"></canvas>-->
+    <canvas id="3d-grid" class="stars"></canvas>
 </body>
 </html>
 <script type="module" src="/main-three.js"></script>

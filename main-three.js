@@ -53,10 +53,6 @@ function main(){
 
   scene.add(light);
 
-  /*const boxWidth = 1;
-  const boxHeight = 1;
-  const boxDepth = 1; */
-
   const geometry = new THREE.BufferGeometry()
   const numberOfPoints = 2500;
   geometry.setAttribute(
@@ -88,8 +84,6 @@ function main(){
     cube.rotation.x = mouseY * 0.005
     cube.rotation.y = mouseX * 0.005
 
-    //cube.position.x = mouseY * 0.0001
-    //cube.position.y = mouseX * -0.0001
 
     renderer.render(scene, camera)
     requestAnimationFrame(render)
@@ -121,9 +115,9 @@ function sphereFunc(){
   const sphereMesh = new THREE.Mesh(sphere, sphereMaterial)
 
   scene.add(sphereMesh)
-  console.log(window.innerWidth)
-  console.log(window.innerHeight)
-  console.log()
+  //console.log(window.innerWidth)
+  //console.log(window.innerHeight)
+  //console.log()
   camera.position.z = 200
   
 
@@ -165,5 +159,19 @@ sphereFunc()
 
 
 function grid(){
+  const scene = new THREE.Scene()
+  const canvas = document.getElementById('3d-grid');
+
+  const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 1000);
+
+  const renderer = new THREE.WebGLRenderer({canvas})
+
   
+  document.body.appendChild(renderer.domElement)
+
+  
+
+
 }
+
+grid()
