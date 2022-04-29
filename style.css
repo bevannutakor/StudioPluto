@@ -94,13 +94,6 @@ a:hover {
     margin-left: 100px;
     margin-right: 100px;
 }
-.center {
-    display: block;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-}
 
 h3 {
     font-style: normal;
@@ -341,20 +334,6 @@ p {
     border-radius: 50%;
     display: inline-block;
 }
-.dot {
-    background-color: transparent;
-    border: 1px solid #662087;    
-    height: 500px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    width: 500px;
-  }
-  .come {
-    position: relative;
-    text-align: center;
-    top: 38vh;
-  }
 
   .modal { 
     position: fixed;  
@@ -401,8 +380,32 @@ p {
   .web3{
     position: absolute;
     z-index: 1;
-    display: flex;
+    
+    width: 100%;
   }
+
+  .dot {
+    background-color: transparent;
+    border: 1px solid #662087;    
+    height: 80vh;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 100%;
+  }
+  .come {
+    position: relative;
+    text-align: center;
+    top: 50vh;
+  }
+
+  .center {
+    display: block;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
 
 
   /*animations*/
