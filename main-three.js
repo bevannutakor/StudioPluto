@@ -115,10 +115,9 @@ function sphereFunc(){
   const sphereMesh = new THREE.Mesh(sphere, sphereMaterial)
 
   scene.add(sphereMesh)
-  //console.log(window.innerWidth)
+  console.log(window.innerWidth)
   //console.log(window.innerHeight)
   //console.log()
-  camera.position.z = 200
   
 
   const sphereLight = new THREE.DirectionalLight(0xffffff, 1)
@@ -134,7 +133,14 @@ function sphereFunc(){
       
       camera.aspect = canvas.clientWidth / canvas.clientHeight;
       camera.updateProjectionMatrix();
+      
+      if(window.innerWidth <= 600){
+        camera.position.z = 300
+      } else {
+        camera.position.z = 200;
+      }
     }
+
     sphereMesh.rotation.x += 0.01
     sphereMesh.rotation.y += 0.01
     renderer.autoClear = false;
