@@ -171,6 +171,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     gap: calc(20px + 5%);
     width: 100%;
+    margin-top: 20vh;
 }
 
 video {
@@ -381,6 +382,10 @@ p {
     height: 100%;
   }
 
+    .modal-images-mobile{
+        display: none;
+    }
+
   .center-text{
       text-align: center;
   }
@@ -434,7 +439,11 @@ p {
     
   }
 
-  @media only screen and (min-width: 100px) and (max-width: 600px) {
+  @media only screen and (min-width: 100px) and (max-width: 1000px) {
+      p{font-size: 5vw;}
+
+    nav{position: relative;}  
+
     .navski{
         font-size: 15px;
     }
@@ -459,5 +468,100 @@ p {
         display: block;
         transform: none;
         width: 100%;
+    }
+
+    .what-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .what-wrapper{
+        overflow: visible;
+        height: auto;
+        top: 0;
+    }
+
+    .midp{
+        width: 100%;
+        font-size: 2em;
+        left: 0;
+        top: 10vh;
+    }
+
+    .oval{
+        width: 100%;
+    }
+
+    .what-grid-row{
+        display: block;
+        margin-top: 10vh;
+    }
+
+    .founder-grid{
+        display: block;
+    }
+
+    .founders-image{
+        width: 100%;
+    }
+
+    .founders-description p {
+        margin-right: 0;
+        margin-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .founders-description{
+        height: auto;
+    }
+
+    .margin50{
+        margin-top: 40em;
+    }
+
+    .but{
+       height: auto;
+       margin-top: 10em;
+      
+    }
+    .button{
+       margin: 4px -45px;
+    }
+
+    .slide-button-mobile{
+        height: auto;
+        margin-bottom: 20em;
+    }
+
+
+    /*mobile: our work*/
+    .our-work-row{
+        display: block;
+    }
+
+    .our-work-border{
+        margin-bottom: 5em;
+    }
+
+    .modal-images{
+        display: none;
+    }
+
+    .modal-images-mobile{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    /*Web3.0*/
+
+    .come{
+        top: 40vh;
+    }
+    .coming-soon-circle-mobile{
+        margin-top: 25vh;
+        width: 70vw;
+        height: 30vh;
     }
   }
