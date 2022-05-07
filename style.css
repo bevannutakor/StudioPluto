@@ -100,7 +100,7 @@ a:hover {
 .logo {
     width: 150px;
     margin-left: 3vw;
-    margin-right: 3vw;
+    margin-right: 6vw;
 }
 
 h3 {
@@ -432,17 +432,12 @@ p {
 
 
   /*responsive breakpoints*/
-  @media only screen and (max-width: 595px) {}
- 
-  /* Small screen devices (600px and above) */
-  @media only screen and (max-width: 800px) {
-    
-  }
+
 
   @media only screen and (min-width: 100px) and (max-width: 1000px) {
       p{font-size: 5vw;}
 
-    nav{position: relative;}  
+    nav{background-color: black;}  
 
     .navski{
         font-size: 15px;
@@ -526,7 +521,7 @@ p {
       
     }
     .button{
-       margin: 4px -45px;
+       margin: 4px -50px;
     }
 
     .slide-button-mobile{
@@ -557,7 +552,7 @@ p {
     /*Web3.0*/
 
     .come{
-        top: 40vh;
+        top: 41vh;
     }
     .coming-soon-circle-mobile{
         margin-top: 25vh;

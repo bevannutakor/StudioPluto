@@ -17,7 +17,7 @@ function resize(renderer){
   if (needResize){
     renderer.setSize(width, height, false)
   }
-  return needResize; //
+  return needResize; 
 }
 
 let mouseX = 0;
@@ -66,7 +66,6 @@ function main(){
     size: 0.005,
     map: loader.load('./src/star.png'),
     transparent: true
-    //color: 0x44aa88
   })
   const cube = new THREE.Points(geometry, material)
 
@@ -116,9 +115,6 @@ function sphereFunc(){
 
   scene.add(sphereMesh)
   console.log(window.innerWidth)
-  //console.log(window.innerHeight)
-  //console.log()
-  
 
   const sphereLight = new THREE.DirectionalLight(0xffffff, 1)
 
@@ -150,34 +146,6 @@ function sphereFunc(){
   }
   requestAnimationFrame(render)
   
-  /*function animate(){
-    requestAnimationFrame(animate)
-    renderer.render(scene, camera)
-    sphereMesh.rotation.x += 0.01
-    sphereMesh.rotation.y += 0.01
-    renderer.autoClear = false;
-    //boxMesh.rotation.x += 0.01
-    //boxMesh.rotation.y += 0.01
-  }*/
 }
 
 sphereFunc()
-
-
-function grid(){
-  const scene = new THREE.Scene()
-  const canvas = document.getElementById('3d-grid');
-
-  const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 1000);
-
-  const renderer = new THREE.WebGLRenderer({canvas})
-
-  
-  document.body.appendChild(renderer.domElement)
-
-  
-
-
-}
-
-grid()
