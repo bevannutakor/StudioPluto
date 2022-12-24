@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.stars{
+  z-index: -1;
+  position: fixed;
+  height: 100%;
+}
+
+#planet{
+  animation-name: planet-animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  width: 100%;
+  position: relative;
+}
+
+@keyframes planet-animation{
+  0%{position: relative; top: -500px; opacity: 0;}
+
+  100%{top:0; opacity: 1;}
+}

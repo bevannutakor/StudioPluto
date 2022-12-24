@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    font-size: 1.7rem;
+}
+
+.navleft {
+    display: flex;
+}
+.navmid {
+    justify-content: center;
+}
+.navright {
+    display: flex;;
+}
+
+.logo {
+    width: calc(50px + 3vw);
+    height: auto;
+    position: relative;
+}
+.logo .image {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    object-fit: cover;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+.link:hover {
+    color: rgba(255, 255, 255, 0.389);
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+}

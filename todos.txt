@@ -1,3 +1,0 @@
-- need to change all size elements to em rem or vh or vw no px pt - for responsive purposes
--Mobile responsivity want to use as little media queries as possible
--Need to build a contact page
