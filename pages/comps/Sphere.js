@@ -12,8 +12,8 @@ export default function Sphere(){
     })
 
     return(
-        <mesh  ref={sphereRef} visible castShadow>
-            <sphereGeometry args={[3]} />
+        <mesh ref={sphereRef} visible castShadow>
+            <sphereGeometry args={[2.5]} />
             <meshStandardMaterial
                 color="blue"
                 wireframe
