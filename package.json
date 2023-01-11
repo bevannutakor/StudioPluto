@@ -11,8 +11,10 @@
   "dependencies": {
     "@next/font": "13.0.7",
     "@nextui-org/react": "^1.0.0-beta.10",
+    "@react-three/drei": "^9.51.23",
+    "@react-three/fiber": "^8.10.0",
     "eslint": "8.29.0",
-    "eslint-config-next": "13.0.7",
+    "eslint-config-next": "^0.2.4",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",

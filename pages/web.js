@@ -94,8 +94,8 @@ export default function Web() {
         </div>
       </main>
 
-      <canvas id="planet" class={styles.planet}></canvas> 
-      <canvas id="stars" class={styles.stars}></canvas>
+      <canvas id="planet" className={styles.planet}></canvas> 
+      <canvas id="stars" className={styles.stars}></canvas>
      </>
     </div>
   )

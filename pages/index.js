@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 import Navbar from './comps/navbar'
+import { Canvas } from '@react-three/fiber'
+//import { OrbitControls } from '@react-three/drei'
+
+import Sphere from './comps/Sphere';
 
 export default function Home() {
   return (
@@ -17,18 +20,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
+      {/*<script type="module" src='./static/main-three.js' ></script>*/}
       </Head>
 
       <Navbar />
 
       <main className={styles.main}>
+        <Canvas>
+            <ambientLight/>
+            <pointLight position={[5,5,5]} intensity={3}/>
+            <pointLight position={[-3,-3,2]} />
+            {/*<axesHelper args={[10]}/>*/}
+            <Sphere />
+        </Canvas>
       </main>
 
-      <canvas id="planet" class={styles.planet}></canvas> 
-      <canvas id="stars" class={styles.stars}></canvas>
-
-      <Script type="module" src='../main-three.js' />
-      <Script src="../main.js" />
     </>
   )
 }

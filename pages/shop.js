@@ -35,8 +35,8 @@ export default function Shop() {
       </main>
       <div className={styles.soon}>shopify theme coming soon.</div>
 
-      <canvas id="planet" class={styles.planet}></canvas> 
-      <canvas id="stars" class={styles.stars}></canvas>
+      <canvas id="planet" className={styles.planet}></canvas> 
+      <canvas id="stars" className={styles.stars}></canvas>
      </>
     </div>
   )
