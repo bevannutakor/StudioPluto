@@ -26,15 +26,45 @@ export default function Home() {
       <Navbar />
 
       <main className={styles.main}>
-        <Canvas>
+        <Canvas className={styles.planet}>
             <ambientLight/>
             <pointLight position={[5,5,5]} intensity={3}/>
             <pointLight position={[-3,-3,2]} />
-            {/*<axesHelper args={[10]}/>*/}
             <Sphere />
         </Canvas>
       </main>
 
+      <div className={styles.home_about_container}>
+          <h1>Lorem ipsum</h1>
+          <div className={styles.home_about_info}>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+      </div>
+
+      <div className={styles.home_cards_container}>
+        <div className={styles.home_cards}>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div className={styles.home_cards}>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <div className={styles.intro_theme_container}>
+        <h3 className={styles.intro_header}>Pluto Theme </h3>
+        
+      </div>
+
+      <div class={styles.contact_container}>
+          
+          <a href="#" className={styles.contact_button}>Lets Work Together</a>
+      </div>
     </>
   )
 }

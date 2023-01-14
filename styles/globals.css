@@ -21,7 +21,7 @@ body {
 
 body {
   color: rbg(--foreground-rgb);
-  background: black;
+  background: #0d1117;
 }
 
 ::-webkit-scrollbar{
@@ -42,6 +42,26 @@ a {
 a:hover {
   color: rgb(255, 255, 255);
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+}
+
+p{
+  color: white;
+}
+
+.align-center{
+  text-align: center;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 5rem;
+  color: white;
+}
+
+h3{
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {

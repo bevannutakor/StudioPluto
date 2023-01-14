@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
 }
 
 .stars{
@@ -13,13 +11,87 @@
   height: 100%;
 }
 
-#planet{
+.planet{
   animation-name: planet-animation;
   animation-duration: 4s;
   animation-fill-mode: forwards;
   width: 100%;
   position: relative;
 }
+
+.home_about_container{
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    height: 70vh;
+    padding: 1rem 3rem;
+    width: 89%;
+    margin: auto;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    /*background: #0d1117;*/
+    margin-bottom: 10vh;
+}
+
+.home_about_info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(20px + 5%);
+  width: 100%;
+  margin-top: 20vh;
+ 
+}
+
+.home_about_info p{
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.home_cards_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(20px + 5%);
+  width: 89%;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+.home_cards{
+  border: 3px solid #4e54c8;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  background: #0d1117;
+  
+}
+
+.intro_theme_container{
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    height: 70vh;
+    padding: 1rem 3rem;
+    width: 89%;
+    margin: auto;
+    margin-bottom: 10vh;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.intro_header{
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+.contact_container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.contact_button{
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 0.75rem;
+  font-size: 1.5rem;
+  background: #746CC0
+}
+
 
 @keyframes planet-animation{
   0%{position: relative; top: -500px; opacity: 0;}

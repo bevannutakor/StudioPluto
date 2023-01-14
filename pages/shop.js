@@ -24,19 +24,21 @@ export default function Shop() {
       <Navbar />
 
       <main className={styles.main}>
-            <Image 
+            {/*<Image 
             src={Shopify}
             alt="Shopify Theme Coming Soon"
             width="1243px"
             height="976px"
             style={styles.image}
             layout="responsive"
-            />
+            />*/}
+            
+            <div class="product-checkout-container">
+              
+            </div>
       </main>
       <div className={styles.soon}>shopify theme coming soon.</div>
 
-      <canvas id="planet" className={styles.planet}></canvas> 
-      <canvas id="stars" className={styles.stars}></canvas>
      </>
     </div>
   )
