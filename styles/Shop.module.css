@@ -36,7 +36,7 @@
     height: 100%;
     border-radius: 0.75rem;
     border: 3px solid white;
-    background-image: url("../src/theme.png");
+    /*background-image: url("../src/theme.png");*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
