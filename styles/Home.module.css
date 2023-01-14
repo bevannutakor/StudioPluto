@@ -26,8 +26,7 @@
     padding: 1rem 3rem;
     width: 89%;
     margin: auto;
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-    /*background: #0d1117;*/
+    /*background: linear-gradient(to right, #4e54c8, #8f94fb);*/
     margin-bottom: 10vh;
 }
 
@@ -70,7 +69,8 @@
     width: 89%;
     margin: auto;
     margin-bottom: 10vh;
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    /*background: linear-gradient(to right, #4e54c8, #8f94fb);*/
+    /*background: linear-gradient(to right, #FC5C7D, #6A82FB);*/
 }
 
 .intro_header{
@@ -89,7 +89,7 @@
   border: 1px solid white;
   border-radius: 0.75rem;
   font-size: 1.5rem;
-  background: #746CC0
+  background: #4e54c8;
 }
 
 

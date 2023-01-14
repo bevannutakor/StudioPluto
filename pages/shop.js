@@ -32,13 +32,41 @@ export default function Shop() {
             style={styles.image}
             layout="responsive"
             />*/}
-            
-            <div class="product-checkout-container">
-              
+
+            <div className={styles.product_container}>
+                <div className={styles.product_image_container}>
+                  <div className={styles.product_image}>
+                    
+                  </div>
+                </div>
+
+                <div className={styles.product_description_container}>
+                  <h1 className={styles.intro_title}>Introducing Pluto Theme</h1>
+                  
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  
+                  <div className={styles.buy_container}>
+                    <a href="#" className={styles.buy}>Purchase Now</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={styles.more_info_container}>
+                <div className={styles.more_info_one}>
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div className={styles.more_info_two}>
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div className={styles.questions_container}>
+                <h2>FAQs</h2>
             </div>
       </main>
-      <div className={styles.soon}>shopify theme coming soon.</div>
-
      </>
     </div>
   )

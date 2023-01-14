@@ -9,17 +9,105 @@
     margin-top: 18rem;
 }
 
-.product-container{
-    border: 1px solid white;
-    border-radius: 1rem;
+
+.intro_title_container{
+    padding: 1rem;
+}
+
+.product_container{
+    display: flex;
+    border: 3px solid white;
     position: relative;
-    top: 15vh;
-    width: 75%;
+    width: 95%;
+    border-radius: 1.5rem;
     margin: auto;
     z-index: 100;
     height: 80vh;
+    margin-bottom: 10vh;
 }
 
+.product_image_container{
+    padding: 2rem;
+    width: 50%;
+}
+
+.product_image{
+    content: "none";
+    height: 100%;
+    border-radius: 0.75rem;
+    border: 3px solid white;
+    background-image: url("../src/theme.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product_description_container{
+    border-left: 3px solid white;
+    padding: 5rem;
+    width: 50%;
+}
+
+.intro_title{
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 5vh;
+}
+
+.product_description_container p{
+    margin-bottom: 5vh;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.buy_container{
+    display: flex;
+    width: 100%;
+}
+
+
+.buy{
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    background: #4e54c8;
+}
+
+.more_info_container{
+    width: 100%;
+    display: flex;
+    padding: 0 3rem;
+    margin-bottom: 10vh;
+}
+
+.more_info_one{
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    margin-right: 5%
+}
+
+.more_info_two{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 1.5rem;
+    padding: 3rem;
+
+}
+
+.questions_container{
+    width: 95%;
+    margin: auto;
+    border: 3px solid white;
+    padding: 3rem;
+    height: 50vh;
+    margin-bottom: 10vh;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #FC5C7D, #6A82FB);
+}
 
 @media screen and (max-width: 1000px) {
     .main {
