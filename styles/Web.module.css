@@ -45,6 +45,7 @@
 
 .rotate {
   transform: rotate(7deg);
+  font-size: calc(25px + 0.5vw);
 }
 
 .cbimage {
@@ -52,7 +53,7 @@
   height: auto;
   position: relative;
   cursor: pointer;
-  border: 1px solid #662087;
+  /* border: 1px solid #662087; */
 }
 .cbimage .image {
   width: 100%;
@@ -74,6 +75,9 @@
 }
 .eleft {
   flex: 1;
+  margin-left: calc(1px + 4vw);
+  padding-left: 10px;
+  border-left: 3px solid #662087;
 }
 .eright {
   flex: 1;
@@ -84,7 +88,7 @@
   height: auto;
   position: relative;
   cursor: pointer;
-  border: 1px solid #662087;
+  /* border: 1px solid #662087; */
 }
 .bedimage .image {
   width: 100%;
