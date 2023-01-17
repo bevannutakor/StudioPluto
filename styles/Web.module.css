@@ -1,12 +1,13 @@
 .main {
     padding: 0 2rem;
+    margin-top: 7rem;
 }
 
 .center {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .words {
@@ -16,6 +17,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 3rem;
+  margin-bottom: 4rem;
   font-size: calc(8px + 1vw);
 }
 
@@ -53,7 +55,8 @@
   height: auto;
   position: relative;
   cursor: pointer;
-  /* border: 1px solid #662087; */
+  border: 3px solid white;
+  border-radius: 1.5rem;
 }
 .cbimage .image {
   width: 100%;
@@ -88,6 +91,8 @@
   height: auto;
   position: relative;
   cursor: pointer;
+  border: 3px solid white;
+  border-radius: 1.5rem;
   /* border: 1px solid #662087; */
 }
 .bedimage .image {
@@ -100,7 +105,7 @@
 .bed {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 @media (max-width: 1600px) {

@@ -35,13 +35,13 @@ export default function Home() {
       </main>
 
       <div className={styles.home_about_container}>
-          <h1>Lorem ipsum</h1>
+          <h1>WELCOME TO PLUTO</h1>
           <div className={styles.home_about_info}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>We are a creative agency that loves creating pixel-perfect, minimal designs that are impactful and have purpose. Allow us to help you build a strong online presence while you continue to focus on the important day-to-day aspects of your business.</p>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>From immersive websites to stunning apps, or wonderful crafted visual graphics in the form of promotional videos or a logo, we are equipped with a vast set of skills and we seek to help you bring any and all of your dreams to life!</p>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p>We have also ventured into new technologies such as Web3 and creating our own products such as comprehensive, customizable Shopify theme, several cross platform applications, a thrilling new writing platform, and much more. </p>
           </div>
       </div>
 
