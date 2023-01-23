@@ -1,11 +1,23 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Shopify from '../src/SHOPIFY.gif'
 import Navbar from './comps/navbar'
 import styles from '../styles/Shop.module.css'
 
+
 export default function Shop() {
+  useEffect(() => {
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('success')) {
+      console.log('Order placed! You will receive an email confirmation.');
+      //Change to modal
+    }
+
+    if (query.get('canceled')) {
+      console.log('Order canceled -- continue to shop around and checkout when you’re ready.');
+    }
+  }, [])
   return (
     <div>
       <>
@@ -45,20 +57,22 @@ export default function Shop() {
                   
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   
-                  <div className={styles.buy_container}>
-                    <a href="#" className={styles.buy}>Purchase Now</a>
-                  </div>
+                  <form action="/api/theme_checkout_sessions" method="POST" className={styles.buy_container}>
+                    <button type="submit" role="link" className={styles.buy}>Purchase Now</button>
+                  </form>
                 </div>
             </div>
 
             <div className={styles.more_info_container}>
                 <div className={styles.more_info_one}>
                   <h2>Lorem Ipsum</h2>
+                  <br></br>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
 
                 <div className={styles.more_info_two}>
                   <h2>Lorem Ipsum</h2>
+                  <br></br>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
