@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from './comps/navbar'
 import { Canvas } from '@react-three/fiber'
 //import { OrbitControls } from '@react-three/drei'
-
+import Spline from '@splinetool/react-spline';
 import Sphere from './comps/Sphere';
 
 export default function Home() {
@@ -20,7 +20,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
-      {/*<script type="module" src='./static/main-three.js' ></script>*/}
       </Head>
 
       <Navbar />
@@ -36,6 +35,7 @@ export default function Home() {
 
       <div className={styles.home_about_container}>
           <h1>WELCOME TO PLUTO</h1>
+          
           <div className={styles.home_about_info}>
               <p>We are a creative agency that loves creating pixel-perfect, minimal designs that are impactful and have purpose. Allow us to help you build a strong online presence while you continue to focus on the important day-to-day aspects of your business.</p>
 
@@ -43,6 +43,16 @@ export default function Home() {
 
               <p>We have also ventured into new technologies such as Web3 and creating our own products such as comprehensive, customizable Shopify theme, several cross platform applications, a thrilling new writing platform, and much more. </p>
           </div>
+      </div>
+
+      <div className={styles.three_dim_container}>
+        <div className={styles.spline_laptop_object}>
+          <Spline scene="https://prod.spline.design/O95XKWtz-CWH8xwp/scene.splinecode" defer/>
+        </div>
+        <div className={styles.info_cards}>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
 
       {/*<div className={styles.home_cards_container}>
