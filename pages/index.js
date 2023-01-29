@@ -47,7 +47,7 @@ export default function Home() {
 
       <div className={styles.three_dim_container}>
         <div className={styles.spline_laptop_object}>
-          <Spline scene="https://prod.spline.design/O95XKWtz-CWH8xwp/scene.splinecode" defer/>
+          <Spline scene="https://prod.spline.design/O95XKWtz-CWH8xwp/scene.splinecode"/>
         </div>
         <div className={styles.info_cards}>
           <h3>Lorem Ipsum</h3>
@@ -55,7 +55,17 @@ export default function Home() {
         </div>
       </div>
 
-      {/*<div className={styles.home_cards_container}>
+      <div className={styles.three_dim_container}>
+        <div className={styles.info_cards}>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div className={styles.spline_laptop_object}>
+        <Spline scene="https://prod.spline.design/wgSvNeo3t2bWbNhp/scene.splinecode" />
+        </div>
+      </div>
+
+      <div className={styles.home_cards_container}>
         <div className={styles.home_cards}>
             <h3>Lorem Ipsum</h3>
             <br></br>
@@ -66,7 +76,17 @@ export default function Home() {
             <br></br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-  </div>*/}
+        <div className={styles.home_cards}>
+            <h3>Lorem Ipsum</h3>
+            <br></br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div className={styles.home_cards}>
+            <h3>Lorem Ipsum</h3>
+            <br></br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+  </div>
 
       <div className={styles.intro_theme_container}>
         <h3 className={styles.intro_header}>Pluto Theme </h3>
