@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+}
+
+.logo {
+    width: calc(50px + 3vw);
+    height: auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.documentation_sidebar{
+    width: 45rem;
+    height: 100vh;
+    border-right: 3px solid white;
+    overflow-y: scroll;
+}
+
+.documentation_info{
+    padding: 3rem  10rem;
+}

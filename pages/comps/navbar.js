@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from './logo.png'
+import Logo from '../../src/logo.png'
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.css'
 
