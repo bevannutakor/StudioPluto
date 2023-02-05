@@ -45,7 +45,7 @@ export default function Home() {
           </div>
       </div>
 
-      <div className={styles.three_dim_container}>
+      {/*<div className={styles.three_dim_container}>
         <div className={styles.spline_laptop_object}>
           <Spline scene="https://prod.spline.design/O95XKWtz-CWH8xwp/scene.splinecode"/>
         </div>
@@ -63,7 +63,7 @@ export default function Home() {
         <div className={styles.spline_laptop_object}>
         <Spline scene="https://prod.spline.design/wgSvNeo3t2bWbNhp/scene.splinecode" />
         </div>
-      </div>
+  </div>*/}
 
       <div className={styles.home_cards_container}>
         <div className={styles.home_cards}>
