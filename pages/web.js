@@ -3,8 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Navbar from './comps/navbar'
-import CB from '../src/cb.png'
-import BED from '../src/bed.png'
+import CB from '../src/cbround.png'
+import BED from '../src/bedround.png'
 
 import styles from '../styles/Web.module.css'
 
