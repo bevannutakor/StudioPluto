@@ -44,6 +44,10 @@ a:hover {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
 }
 
+img:hover {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+}
+
 button:hover{
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
 }

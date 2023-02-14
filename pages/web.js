@@ -7,6 +7,7 @@ import CB from '../src/cbround.png'
 import BED from '../src/bedround.png'
 
 import styles from '../styles/Web.module.css'
+import Link from 'next/link'
 
 
 
@@ -52,14 +53,16 @@ export default function Web() {
         </div>
         <div className={styles.center}>
             <div className={styles.cbimage}>
-                <Image 
-                    src={CB}
-                    alt="Shopify Theme Coming Soon"
-                    width="3008px"
-                    height="1778px"
-                    style={styles.image}
-                    layout="responsive"
-                />
+                <a target="_blank" href="https://www.cancerblake.com" rel="noopener noreferrer">
+                    <Image 
+                        src={CB}
+                        alt="Shopify Theme Coming Soon"
+                        width="3008px"
+                        height="1778px"
+                        style={styles.image}
+                        layout="responsive"
+                    />
+                </a>
             </div>
         </div>
 
@@ -82,14 +85,16 @@ export default function Web() {
         </div>
         <div className={styles.center}>
             <div className={styles.bedimage}>
-                <Image 
-                    src={BED}
-                    alt="Shopify Theme Coming Soon"
-                    width="3012px"
-                    height="1776px"
-                    style={styles.image}
-                    layout="responsive"
-                />
+                <a target="_blank" href="https://blackexcellenceday.ca" rel="noopener noreferrer">
+                    <Image 
+                        src={BED}
+                        alt="Shopify Theme Coming Soon"
+                        width="3012px"
+                        height="1776px"
+                        style={styles.image}
+                        layout="responsive"
+                    />
+                </a>
             </div>
         </div>
       </main>
