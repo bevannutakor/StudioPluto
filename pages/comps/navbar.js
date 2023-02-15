@@ -8,12 +8,12 @@ export default function Navbar() {
   return (
     <div className={styles.navbar} id='navbar'>
         <div className={styles.navleft}>
-          <Link href="/web">WEB</Link>
+          <a href="/web">WEB</a>
         </div>
         
         <div className={styles.navmid}>
             <div className={styles.logo}>
-              <Link href="/">
+              <a href="/">
                 <Image 
                   src={Logo}
                   alt="Studio Pluto Logo"
@@ -22,12 +22,12 @@ export default function Navbar() {
                   style={styles.image}
                   layout="responsive"
                 />
-              </Link>
+              </a>
             </div>
         </div>
         
         <div className={styles.navright}>
-          <Link href="/shop">SHOP</Link>
+          <a href="/shop">SHOP</a>
         </div>
     </div>
   )

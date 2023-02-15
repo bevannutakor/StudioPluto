@@ -55,7 +55,7 @@ export default function Shop() {
                 <div className={styles.product_description_container}>
                   <h1 className={styles.intro_title}>Introducing Pluto Theme</h1>
                   
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>A fully customizable theme for your Shopify store, designed to meet the latest standards in web design. you have the flexibility to create a unique and visually appealing website that effectively showcases your brand and products. </p>
                   
                   <form action="/api/theme_checkout_sessions" method="POST" className={styles.buy_container}>
                     <button type="submit" role="link" className={styles.buy}>Purchase Now</button>
@@ -65,20 +65,27 @@ export default function Shop() {
 
             <div className={styles.more_info_container}>
                 <div className={styles.more_info_one}>
-                  <h2>Lorem Ipsum</h2>
+                  <h2>Customer Retention</h2>
                   <br></br>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Pairing the products you offer to your customers alongside a website that is appealing to the eye elevates the perception of your company and assures them of the quality of your product</p>
                 </div>
 
                 <div className={styles.more_info_two}>
-                  <h2>Lorem Ipsum</h2>
+                  <h2>Design flexibility</h2>
                   <br></br>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>An added perk to this theme is the creative design customizations that are allowed. Check out our theme documentation to learn how to customize your theme quickly </p>
+                  <div className={styles.docs_link_container}>
+                    <a href="/theme_docs/SetupStore" className={styles.docs_link}>Theme Documentation</a>
+                  </div>
                 </div>
             </div>
 
-            <div className={styles.questions_container}>
-                <h2>FAQs</h2>
+            <div className={styles.support_container}>
+                <h2>Custom Installation</h2>
+                <br></br>
+                <p>We offer additional support to help you get the most out of the theme you have purchased from us. We are ready to assist you in configuring your store and ensuring that everything is set up to your liking. If you're looking for more advanced customizations or have specific requirements, we would be happy to assist you. Simply reach out to us and we will be there to help you every step of the way. </p>
+
+                <a href="#" className={styles.support_link}>Theme Documentation</a>
             </div>
       </main>
      </>

@@ -34,7 +34,7 @@ export default function Home() {
       </main>
 
       <div className={styles.home_about_container}>
-          <h1>WELCOME TO PLUTO</h1>
+          <h1 className={styles.welcome_header}>WELCOME TO PLUTO</h1>
           
           <div className={styles.home_about_info}>
               <p>We are a creative agency that loves creating pixel-perfect, minimal designs that are impactful and have purpose. Allow us to help you build a strong online presence while you continue to focus on the important day-to-day aspects of your business.</p>
@@ -67,30 +67,34 @@ export default function Home() {
 
       <div className={styles.home_cards_container}>
         <div className={styles.home_cards}>
-            <h3>Lorem Ipsum</h3>
+            <h3>Client Web Development</h3>
             <br></br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Our goal is to help you establish an online presence that accurately reflects your brand and serves your specific goals.
+            We handle all aspects of the web development process, from the initial design concept to the final product.  We use the latest web development technologies to ensure that your website is fast, secure, and optimized for search engines.</p>
         </div>
         <div className={styles.home_cards}>
-            <h3>Lorem Ipsum</h3>
+            <h3>3D design and animation</h3>
             <br></br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p> Whether it be for a web project or any other project, our goal is to bring our clients' visions to life in a stunning and engaging way. We believe that by incorporating 3D designs and animations into our work, we can help our clients stand out and make a lasting impression on their target audience</p>
         </div>
         <div className={styles.home_cards}>
+            <h3>Digital Products</h3>
+            <br></br>
+            <p>We specialize in creating high-quality digital products that help our customers enhance their business and personal endeavors. Our goal is to continuously provide innovative and effective solutions that meet their specific needs and exceed their expectations. Through our expertise and commitment to excellence, we aim to establish long-lasting relationships with our customers.</p>
+        </div>
+        {/*<div className={styles.home_cards}>
             <h3>Lorem Ipsum</h3>
             <br></br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div className={styles.home_cards}>
-            <h3>Lorem Ipsum</h3>
-            <br></br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+        </div>*/}
   </div>
 
       <div className={styles.intro_theme_container}>
         <h3 className={styles.intro_header}>Pluto Theme </h3>
+        <br></br>
+        <p className={styles.intro_theme_text}>Our newest digital product is a modern and functional Shopify theme designed to meet the practical needs of online businesses and catch the attention of your customers.</p>
         
+        <a className={styles.intro_theme_button} href="/shop">Learn More</a>
       </div>
 
       <div class={styles.contact_container}>
