@@ -78,6 +78,12 @@ h3{
   color: white;
 }
 
+h4{
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: white;
+}
+
 ul {
   list-style: none;
 }

@@ -44,6 +44,11 @@
 }
 
 .product_description_container{
+    padding: 5rem;
+    width: 50%;
+}
+
+.product_bundle_description_container{
     border-left: 3px solid white;
     padding: 5rem;
     width: 50%;
@@ -62,6 +67,12 @@
     font-size: 1.45rem;
 }
 
+.product_bundle_description_container p{
+    margin-bottom: 5vh;
+    font-weight: 600;
+    font-size: 1.45rem;
+}
+
 .buy_container{
     display: flex;
     width: 100%;
@@ -72,8 +83,9 @@
     padding: 1rem;
     border: 1px solid white;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background: #4e54c8;
+    color: white;
 }
 
 .more_info_container{
@@ -153,17 +165,19 @@
         height: 100%;
     }
     .product_description_container{
-        border-left: none;
-        border-top: 3px solid white;
         width: 100%;
         padding: 2rem
     }
 
+    .product_bundle_description_container{
+        width: 100%;
+        padding: 2rem;
+        border-left: none;
+        border-top: 3px solid white;
+    }
+
     .intro_title{
         font-size: 2.5rem;
-    }
-    .intro_title_container{
-
     }
 
     .product_image_container{

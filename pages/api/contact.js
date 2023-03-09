@@ -1,0 +1,31 @@
+const nodemailer = require('nodemailer');
+
+export default async function contact(req, res){
+    if(req.method === "POST"){
+        let transporter = nodemailer.createTransport({
+            host: process.env.ZOHO_HOST,
+            secure: false,
+            port: 587,
+            auth: {
+                user: process.env.ZOHO_USER,
+                pass: process.env.ZOHO_PASSWORD
+            }
+        })
+
+        const mailOptions = {
+            from: process.env.ZOHO_USER,
+            to: process.env.ZOHO_USER,
+            subject: req.body.subject,
+            text: `Hello, ${req.body.name} <${req.body.email}> \n ${req.body.message}`
+        }
+
+        transporter.sendMail(mailOptions, (error, data) => {
+            if(error){
+                console.log("Error: " + error);
+            } else {
+                console.log("Email sent successfully")
+                res.status(200).send(data)
+            }
+        })
+    }
+}

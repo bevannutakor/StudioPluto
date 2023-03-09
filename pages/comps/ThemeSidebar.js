@@ -10,13 +10,13 @@ export default function ThemeDocumentation() {
             <a href="/">
                 <div className={styles.logo}>
                     
-                        <Image 
-                            src={Logo}
-                            alt="Studio Pluto Logo"
-                            width="888px"
-                            height="996px"
-                            layout="responsive"
-                        />
+                    <Image 
+                      src={Logo}
+                      alt="Studio Pluto Logo"
+                      width="888px"
+                      height="996px"
+                      layout="responsive"
+                    />
                     
                 </div>
             </a>
@@ -28,10 +28,13 @@ export default function ThemeDocumentation() {
                   <Link href="/theme_docs/ThemeSettings">Theme Settings</Link>
                 </p>
                 <p className={styles.documentation_link}>
-                  <Link href="#">Sections</Link>
+                  <Link href="/theme_docs/Sections">Sections</Link>
                 </p>
                 <p className={styles.documentation_link}>
-                <Link href="#">Pages</Link>
+                <Link href="/theme_docs/Pages">Pages</Link>
+                </p>
+                <p className={styles.documentation_link}>
+                <Link href="/theme_docs/Media">Media</Link>
                 </p>
             </div>
         </div>

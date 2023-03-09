@@ -20,8 +20,51 @@ export default function SetupStore(){
             <main className={styles.main}>
                 <ThemeSidebar/>
                 <div className={styles.documentation_info}>
-                    <h3>Set Up Store</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Set Up Shopify Store</h3>
+                    <br></br>
+                    <h4>Quick set up before you start customizing the Pluto Theme</h4>
+                    <br></br>
+                    <div className={styles.documentation_bubble}>
+                        <p>If you are just getting started with Shopify you may want to refer to these links below</p>
+                    </div>
+                    <br></br>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/domains">Setting Up Domains</a>
+                    </p>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/online-store/menus-and-links">Menu Links</a>
+                    </p>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/products/add-update-products">Creating Products</a>
+                    </p>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/products/collections">Creating collections</a>
+                    </p>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/payments/getting-paid">Payment Set up</a>
+                    </p>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/apps/installing-apps">Apps</a>
+                    </p>
+                    <div className={styles.documentation_section}>
+                        <h4>Upload your theme</h4>
+                        <br></br>
+                        <hr></hr>
+                        <p className={styles.documentation_text}></p>
+                        
+                    </div>
+
+                    <div className={styles.setup_warning}>
+                        <p>Note: While we do offer support for theme customization and theme assets we do not offer support for third-party apps or third-party code installations.</p>
+                    </div>
+
+                    
                 </div>
             </main>
         </>

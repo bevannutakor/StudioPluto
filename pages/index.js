@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -6,8 +7,16 @@ import { Canvas } from '@react-three/fiber'
 //import { OrbitControls } from '@react-three/drei'
 import Spline from '@splinetool/react-spline';
 import Sphere from './comps/Sphere';
+import Contact from './comps/contact';
 
 export default function Home() {
+
+  const [contactModal, setContactModal] = useState(false);
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setContactModal(true);
+  }
   return (
     <>
       <Head>
@@ -99,8 +108,10 @@ export default function Home() {
 
       <div class={styles.contact_container}>
           
-          <a href="#" className={styles.contact_button}>Lets Work Together</a>
+          <button onClick={openModal} className={styles.contact_button}>Lets Work Together</button>
       </div>
+
+        {contactModal && <Contact isOpen={contactModal} setIsOpen={setContactModal}/>}
     </>
   )
 }
