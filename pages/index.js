@@ -6,8 +6,32 @@ import Navbar from './comps/navbar'
 import { Canvas } from '@react-three/fiber'
 //import { OrbitControls } from '@react-three/drei'
 import Spline from '@splinetool/react-spline';
-import Sphere from './comps/Sphere';
+//import Sphere from './comps/Sphere';
 import Contact from './comps/contact';
+
+import { useFrame } from '@react-three/fiber';
+import { useRef } from "react";
+
+
+
+function Sphere(){
+    const sphereRef = useRef();
+
+    useFrame(() => {
+        sphereRef.current.rotation.x += 0.005;
+        sphereRef.current.rotation.y += 0.01;
+    })
+
+    return(
+        <mesh ref={sphereRef} visible castShadow>
+            <sphereGeometry args={[2.5]} />
+            <meshStandardMaterial
+                color="blue"
+                wireframe
+            />
+        </mesh>
+    )
+}
 
 export default function Home() {
 
@@ -35,10 +59,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <Canvas className={styles.planet}>
+            <Sphere />
             <ambientLight/>
             <pointLight position={[5,5,5]} intensity={3}/>
             <pointLight position={[-3,-3,2]} />
-            <Sphere />
         </Canvas>
       </main>
 

@@ -29,16 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/theme_docs/Media": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/theme_docs/Media.js"
-    ],
-    "/theme_docs/SetupStore": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/theme_docs/SetupStore.js"
     ]
   },
   "ampFirstPages": []

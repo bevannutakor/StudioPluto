@@ -1,8 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/theme_docs/SetupStore": "pages/theme_docs/SetupStore.js",
-  "/theme_docs/Media": "pages/theme_docs/Media.js",
+  "/_document": "pages/_document.js",
   "/": "pages/index.js"
 }
