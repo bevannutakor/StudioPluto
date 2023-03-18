@@ -3,7 +3,7 @@
 }
 
 .logo {
-    width: calc(50px + 3vw);
+    width: calc(100px + 3vw);
     height: auto;
     position: relative;
     display: block;
@@ -12,12 +12,99 @@
 }
 
 .documentation_sidebar{
-    width: 45rem;
+    width: 20rem;
     height: 100vh;
     border-right: 3px solid white;
     overflow-y: scroll;
+    position: fixed;
+}
+
+.documentation_section{
+    margin-top: 10vh;
+    position: relative;
+}
+
+.documentation_link{
+    padding: 2.25rem 2.25rem;
+    margin-top: -3px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.documentation_bubble{
+    /*background-color: #0d1117;*/
+    /*background: linear-gradient(to right, #4e54c8, #8f94fb);*/
+    border: 1px solid white;
+    padding: 3rem;
+    border-radius: 0.75rem;
+}
+
+.external_doc_links{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.external_doc_links a{
+    text-decoration: underline;
+}
+
+
+.setup_warning{
+    box-shadow: 5px 5px 5px 5px black;
+    background: linear-gradient(to right, #FC5C7D, #6A82FB);
+    border: 1px solid white;
+    padding: 3rem;
+    border-radius: 0.75rem;
+    margin-top: 3rem;
+}
+
+.documentation_section{
+    margin-top: 3rem;
+}
+
+.logo:hover{
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
 }
 
 .documentation_info{
-    padding: 3rem  10rem;
+    padding: 3rem  10rem 3rem 27rem;
+    width: 100%;
+}
+
+.documentation_heading_paragraph{
+    box-shadow: 5px 5px 5px 5px black;
+    background: linear-gradient(to right, #FC5C7D, #6A82FB);
+    border: 1px solid white;
+    padding: 3rem;
+    border-radius: 0.75rem;
+    margin-top: 2rem;
+}
+
+.doc_sublink{
+    text-decoration: underline;
+    color: white;
+}
+
+.documentation_text{
+    margin-top: 2rem;
+}
+
+.documentation_list  {
+    list-style: circle;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.documentation_list li {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+@media only screen and (max-width: 480px){
+    .documentation_sidebar{
+        display: none; /*temporary*/
+    }
+    .documentation_info{
+        padding: 3rem 1rem;
+    }
 }

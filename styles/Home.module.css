@@ -31,6 +31,12 @@
     margin-bottom: 10vh;
 }
 
+.welcome_header{
+  font-weight: 800;
+  font-size: 5rem;
+  color: white;
+}
+
 .home_about_info{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -69,24 +75,27 @@
 
 .info_cards p{
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
 }
 
 .home_cards_container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: calc(20px + 5%);
-  width: 89%;
+  display: flex;
+  justify-content: center;
+  gap: 0 10rem;
+  flex-wrap: wrap;
+  width: 85%;
   margin: auto;
-  margin-bottom: 10vh;
 }
 
 .home_cards{
   border: 3px solid white;
-  padding: 5rem;
+  flex-basis: 40%;
+  padding: 5rem 3rem;
   border-radius: 1.5rem;
   background: #0d1117;
-  
+  margin-bottom: 10vh;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .intro_theme_container{
@@ -99,6 +108,25 @@
     margin-bottom: 10vh;
     /*background: linear-gradient(to right, #4e54c8, #8f94fb);*/
     background: linear-gradient(to right, #FC5C7D, #6A82FB);
+}
+
+.intro_theme_text{
+  width: 70%;
+  font-size: 25px;
+  margin-bottom: 5rem;
+}
+
+.intro_theme_button{
+  padding: 1rem;
+  border: 1px solid #4e54c8;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #4e54c8;
+  background: white;
+}
+
+.intro_theme_button:hover{
+  color: #4e54c8;
 }
 
 .intro_header{
@@ -115,9 +143,51 @@
 .contact_button{
   padding: 1rem;
   border: 1px solid white;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   background: #4e54c8;
+  color: white;
+}
+
+
+@media only screen and (max-width: 480px){
+  .home_about_container{
+    border: none;
+    height: 100%;
+    background: none;
+    margin-bottom: 20vh;
+    padding: 0;
+  }
+
+  .welcome_header{
+    margin-top: 10vh;
+    font-size: 3.5vh;
+  }
+
+  .home_about_info{
+    grid-template-columns: auto;
+    margin-top: 5vh;
+  }
+
+  .home_about_info p{
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    border: 3px solid white;
+    border-radius: 0.75rem;
+    padding: 3rem;
+  }
+
+  .home_cards_container{
+    display: block;
+    width: 89%;
+  }
+
+  .intro_header{
+    font-size: 3rem;
+  }
+
+  .intro_theme_text{
+    width: 100%;
+  }
 }
 
 

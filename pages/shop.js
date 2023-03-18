@@ -46,39 +46,56 @@ export default function Shop() {
             />*/}
 
             <div className={styles.product_container}>
-                <div className={styles.product_image_container}>
+                {/*<div className={styles.product_image_container}>
                   <div className={styles.product_image}>
                     
                   </div>
-                </div>
+                </div>*/}
 
                 <div className={styles.product_description_container}>
-                  <h1 className={styles.intro_title}>Introducing Pluto Theme</h1>
+                  <h1 className={styles.intro_title}>Pluto Shopify Theme</h1>
                   
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>A fully customizable theme for your Shopify store, designed to meet the latest standards in web design. you have the flexibility to create a unique and visually appealing website that effectively showcases your brand and products. </p>
                   
                   <form action="/api/theme_checkout_sessions" method="POST" className={styles.buy_container}>
-                    <button type="submit" role="link" className={styles.buy}>Purchase Now</button>
+                    <button type="submit" role="link" className={styles.buy}>Purchase Now - $50 USD</button>
+                  </form>
+                </div>
+                
+                <div className={styles.product_bundle_description_container}>
+                  <h1 className={styles.intro_title}>Theme and 3D Logo Package</h1>
+                  
+                  <p>Purchaseing this package gives you the same fully customizable theme but also gives you access to the creation of your very own 3D logo models to complement your theme and one background animation as well.</p>
+                  
+                  <form action="#" method="POST" className={styles.buy_container}>
+                    <button type="submit" role="link" className={styles.buy}>Purchase Now - $100 USD</button>
                   </form>
                 </div>
             </div>
 
             <div className={styles.more_info_container}>
                 <div className={styles.more_info_one}>
-                  <h2>Lorem Ipsum</h2>
+                  <h2>Customer Retention</h2>
                   <br></br>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Pairing the products you offer to your customers alongside a website that is appealing to the eye elevates the perception of your company and assures them of the quality of your product</p>
                 </div>
 
                 <div className={styles.more_info_two}>
-                  <h2>Lorem Ipsum</h2>
+                  <h2>Design flexibility</h2>
                   <br></br>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>An added perk to this theme is the creative design customizations that are allowed. Check out our theme documentation to learn how to customize your theme quickly </p>
+                  <div className={styles.docs_link_container}>
+                    <a href="/theme_docs/SetupStore" className={styles.docs_link}>Theme Documentation</a>
+                  </div>
                 </div>
             </div>
 
-            <div className={styles.questions_container}>
-                <h2>FAQs</h2>
+            <div className={styles.support_container}>
+                <h2>Installation Support</h2>
+                <br></br>
+                <p>We offer additional support to help you get the most out of the theme you have purchased from us. We are ready to assist you in configuring your store and ensuring that everything is set up to your liking. If you have any questions or need help with setting up your theme contact support and we will be there to help you every step of the way. If there are advanced features that you would like for your specific needs</p>
+
+                <a href="#" className={styles.support_link}>Support</a>
             </div>
       </main>
      </>

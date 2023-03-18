@@ -1,0 +1,72 @@
+.modal_container{
+    background-color: white;
+}
+
+.exit{
+    float: right;
+    font-size: 2rem;
+    color: white;
+}
+
+.exit:hover{
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+}
+
+.contact_heading{
+    margin-bottom: 1rem;
+}
+
+.input{
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #4e54c8;
+    margin-bottom: 5vh;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.input:hover{
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.contact_form{
+    width: 75%;
+    margin: auto;
+    border: 3px solid white;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #FC5C7D, #6A82FB);
+    padding: 3rem;
+}
+
+.name_email_container{
+    display: flex;
+    justify-content: center;
+}
+
+.name_email_row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+    width: 100%;
+}
+
+.submit{
+    padding: 1rem;
+    border: 1px solid #4e54c8;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: white;
+    color: #4e54c8;
+    width: 25%;
+}

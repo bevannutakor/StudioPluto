@@ -31,9 +31,37 @@ export default function Web() {
 
       <main className={styles.main}>
         <div className={styles.words}>
-            <h2>We've made a lot of websites, but here are the two which showcase our versatility the most.</h2>
+            <h2 className={styles.work_header}>We've made a lot of websites, but here are the two which show our versatility the most.</h2>
         </div>
-        <div className={styles.cb}>
+
+        <div className={styles.websites}>
+            <div className={styles.cbimage}>
+                <a target="_blank" href="https://www.cancerblake.com" rel="noopener noreferrer">
+                    <Image 
+                        src={CB}
+                        alt="Shopify Theme Coming Soon"
+                        width="3008px"
+                        height="1778px"
+                        style={styles.image}
+                        layout="responsive"
+                    />
+                </a>
+            </div>
+
+            <div className={styles.bedimage}>
+                <a target="_blank" href="https://blackexcellenceday.ca" rel="noopener noreferrer">
+                    <Image 
+                        src={BED}
+                        alt="Shopify Theme Coming Soon"
+                        width="3012px"
+                        height="1776px"
+                        style={styles.image}
+                        layout="responsive"
+                    />
+                </a>
+            </div>
+        </div>
+        {/*<div className={styles.cb}>
             <div className={styles.oval}>
                 <h1 className={styles.rotate}>Cancer Blake</h1>
             </div>
@@ -96,11 +124,8 @@ export default function Web() {
                     />
                 </a>
             </div>
-        </div>
+        </div>*/}
       </main>
-
-      <canvas id="planet" className={styles.planet}></canvas> 
-      <canvas id="stars" className={styles.stars}></canvas>
      </>
     </div>
   )
