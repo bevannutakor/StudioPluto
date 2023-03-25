@@ -83,7 +83,7 @@ export default function ThemeSettings(){
                         <h4>Grid Settings</h4>
                         <br></br>
                         <hr></hr>
-                        <p className={styles.documentation_text}>The theme employs the use of many grid borders, choose their design by changing the border thickness, style, or even change the border to a specific image.</p>
+                        <p className={styles.documentation_text}>The theme employs the use of many grid borders, choose their design by changing the border thickness, or style.</p>
                     </div>
 
                     <div className={styles.documentation_section}>

@@ -1,19 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import axios from 'axios';
-import Head from 'next/head'
 import styles from '../../styles/Contact.module.css'
-import Navbar from './navbar'
 import Modal from 'react-modal';
 export default function Contact(props){
     const {isOpen, setIsOpen } = props;
 
     const modalCustomStyles = {
         overlay: {
-           backgroundColor: 'rgba(0, 0, 0, 0.9)'
+           backgroundColor: 'rgba(0, 0, 0, 0.9)',
         },
         content: {
-           background: 'transparent',
-           border: 'none'
+            background: 'transparent',
+            border: 'none',
+            inset: '0',
         }
      }
 
@@ -43,13 +42,11 @@ export default function Contact(props){
         <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}  style={modalCustomStyles}>
             <form onSubmit={submitContact} className={styles.contact_form}>
                 <span onClick={() => setIsOpen(false)} className={styles.exit}>&times;</span>
-                <h1 className={styles.contact_heading}>Get In Touch</h1>
-                <div className={styles.name_email_container}>
+                <h3 className={styles.contact_heading}>Get In Touch</h3>
                     <div className={styles.name_email_row}>
                         <input className={styles.input} placeholder="Name" name="name"/>
                         <input className={styles.input} placeholder="Email*" name="email"/>
                     </div>
-                </div>
                 
                 <input className={styles.input} placeholder="Subject" name="subject"/>
                 

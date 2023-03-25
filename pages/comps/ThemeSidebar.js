@@ -1,12 +1,26 @@
-import Image from 'next/image'
+import React, {useState} from 'react';
+import Image from 'next/image';
 import Logo from '../../src/logo.png';
-import Link from 'next/link'
-import styles from '../../styles/theme-documentation.module.css'
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import styles from '../../styles/theme-documentation.module.css';
 
 export default function ThemeDocumentation() {
+    const [mobileSidebar, setMobileSidebar] = useState(false);
+    const toggleSidebar = () => {
+      if(mobileSidebar === true){
+        setMobileSidebar(false);
+      } else {
+        setMobileSidebar(true);
+      }
+    }
     return (
       <>
-        <div className={styles.documentation_sidebar}>
+        <div className={styles.mobile_modal} onClick={toggleSidebar}>
+          <FontAwesomeIcon icon={mobileSidebar===true ? faX : faBars} />
+        </div>
+        <div className={ mobileSidebar===true ? styles.documentation_sidebar_mobile : styles.documentation_sidebar}>
             <a href="/">
                 <div className={styles.logo}>
                     
