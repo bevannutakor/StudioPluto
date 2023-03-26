@@ -37,16 +37,18 @@ export default async function contact(req, res){
             
                     transporter.sendMail(mailOptions, (error, data) => {
                         if(error){
-                            console.log("Error: " + error);
+                            res.status(405).json({
+                                status: "failure",
+                                message: "There was an error submitting the form",
+                            });
                         } else {
                             console.log("Email sent successfully")
-                            res.status(200).send(data)
+                            res.status(200).json({
+                                status: "success",
+                                message: "Form submitted successfully",
+                            });
                         }
                     })
-                  res.status(200).json({
-                    status: "success",
-                    message: "Form submitted successfully",
-                  });
                 } else {
                   res.status(400).json({
                     status: "failure",
