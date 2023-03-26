@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useState,useCallback} from 'react';
 import axios from 'axios';
 import styles from '../../styles/Contact.module.css'
 import Modal from 'react-modal';
@@ -6,6 +6,7 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function Contact(props){
     const {isOpen, setIsOpen } = props;
+    const [status, setStatus] = useState("")
     const { executeRecaptcha } = useGoogleReCaptcha();
 
     const modalCustomStyles = {
@@ -23,7 +24,7 @@ export default function Contact(props){
          (e) => {
              e.preventDefault();
              if (!executeRecaptcha) {
-                console.log("Execute recaptcha not yet available");
+                setStatus("Something went wrong with the recaptcha");
                 return;
               }
               executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
@@ -47,13 +48,17 @@ export default function Contact(props){
             gRecaptchaToken: gReCaptchaToken,
         })
         .then((res) => {
+            name.value = "";
+            email.value = "";
+            subject.value = "";
+            message.value = "";
+            
             if (res.status === 200){
-                name.value = "";
-                email.value = "";
-                subject.value = "";
-                message.value = "";
+                setStatus("The form has been submitted successfully")
+            } else {
+                setStatus("Something went wrong")
             }
-            console.log(res.status)
+            //console.log(res.status)
         })
      }
     return(
@@ -71,6 +76,8 @@ export default function Contact(props){
                 <textarea rows="10" className={styles.input} placeholder="Message*" name="message"/>
 
                 <button type="submit" className={styles.submit}>Submit</button>
+                <br></br>
+                {status !== "" ? (<p>{status}</p>) : ""}
             </form>
         </Modal>
     )

@@ -11,13 +11,14 @@ export default async function contact(req, res){
                 },
                 body: `secret=your_secret_key&response=${req.body.gRecaptchaToken}`
             })
-            .then((reCaptchaRes) => reCaptchaRes.json())
+            //.then((reCaptchaRes) => reCaptchaRes.json())
             .then((reCaptchaRes) => {
                 console.log(
                   reCaptchaRes,
                   "Response from Google reCaptcha verification API"
                 );
                 if (reCaptchaRes.score > 0.5) {
+                    //send email using node mailer
                     let transporter = nodemailer.createTransport({
                         host: process.env.ZOHO_HOST,
                         secure: false,
@@ -49,6 +50,7 @@ export default async function contact(req, res){
                             });
                         }
                     })
+
                 } else {
                   res.status(400).json({
                     status: "failure",
