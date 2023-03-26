@@ -104,6 +104,10 @@
     display: none;
 }
 
+.mobile-modal svg {
+    color: white;
+}
+
 @media only screen and (max-width: 480px){
     .mobile_modal{
         display: block;
@@ -118,7 +122,7 @@
         display: block;
     }
     .documentation_sidebar{
-        display: none; /*temporary*/
+        display: none;
     }
 
     .documentation_sidebar_mobile{

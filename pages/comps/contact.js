@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import axios from 'axios';
 import styles from '../../styles/Contact.module.css'
 import Modal from 'react-modal';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+
 export default function Contact(props){
     const {isOpen, setIsOpen } = props;
+    const { executeRecaptcha } = useGoogleReCaptcha();
 
     const modalCustomStyles = {
         overlay: {
@@ -16,8 +19,22 @@ export default function Contact(props){
         }
      }
 
-     const submitContact = async (e) => {
-        e.preventDefault();
+     const handleRecaptcha = useCallback(
+         (e) => {
+             e.preventDefault();
+             if (!executeRecaptcha) {
+                console.log("Execute recaptcha not yet available");
+                return;
+              }
+              executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+                console.log(gReCaptchaToken, "response Google reCaptcha server");
+                submitContact(gReCaptchaToken);
+              });
+         },
+         [executeRecaptcha]
+     )
+
+     const submitContact = async (gReCaptchaToken) => {
         let {name, email, subject, message} = e.target.elements;
         await axios.post('api/contact', {
             headers: {
@@ -26,7 +43,8 @@ export default function Contact(props){
             name: name.value,
             email: email.value,
             subject: subject.value,
-            message: message.value
+            message: message.value,
+            gRecaptchaToken: gReCaptchaToken,
         })
         .then((res) => {
             if (res.status === 200){
@@ -35,12 +53,12 @@ export default function Contact(props){
                 subject.value = "";
                 message.value = "";
             }
-            console.log(res.data)
+            console.log(res.status)
         })
      }
     return(
         <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}  style={modalCustomStyles}>
-            <form onSubmit={submitContact} className={styles.contact_form}>
+            <form onSubmit={handleRecaptcha} className={styles.contact_form}>
                 <span onClick={() => setIsOpen(false)} className={styles.exit}>&times;</span>
                 <h3 className={styles.contact_heading}>Get In Touch</h3>
                     <div className={styles.name_email_row}>
