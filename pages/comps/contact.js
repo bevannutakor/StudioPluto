@@ -24,7 +24,7 @@ export default function Contact(props){
          (e) => {
              e.preventDefault();
              if (!executeRecaptcha) {
-                setStatus("Something went wrong with the recaptcha");
+                setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
                 return;
               }
               executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
