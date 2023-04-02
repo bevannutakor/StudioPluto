@@ -127,7 +127,7 @@ export default function Home() {
         <br></br>
         <p className={styles.intro_theme_text}>Our newest digital product is a modern and functional Shopify theme designed to meet the practical needs of online businesses and catch the attention of your customers.</p>
         
-        <a className={styles.intro_theme_button} href="#">Learn More</a>
+        <a className={styles.intro_theme_button} href="/shop">Learn More</a>
       </div>
 
       <div class={styles.contact_container}>

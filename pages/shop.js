@@ -58,7 +58,7 @@ export default function Shop() {
                   <p>A fully customizable theme for your Shopify store, designed to meet the latest standards in web design. you have the flexibility to create a unique and visually appealing website that effectively showcases your brand and products. </p>
                   
                   <form action="/api/theme_checkout_sessions" method="POST" className={styles.buy_container}>
-                    <button type="submit" role="link" className={styles.buy}>Purchase Now - $50 USD</button>
+                    <button type="submit" role="link" className={styles.buy}disabled >Coming Soon - $50 USD</button>
                   </form>
                 </div>
                 
@@ -68,7 +68,7 @@ export default function Shop() {
                   <p>Purchaseing this package gives you the same fully customizable theme but also gives you access to the creation of your very own 3D logo models to complement your theme and one background animation as well.</p>
                   
                   <form action="#" method="POST" className={styles.buy_container}>
-                    <button type="submit" role="link" className={styles.buy}>Purchase Now - $100 USD</button>
+                    <button type="submit" role="link" className={styles.buy}disabled >Coming Soon - $100 USD</button>
                   </form>
                 </div>
             </div>

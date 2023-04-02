@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
         
         <div className={styles.navright}>
-          <a href="#">SHOP</a>
+          <a href="/shop">SHOP</a>
         </div>
     </div>
   )
