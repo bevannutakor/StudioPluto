@@ -95,7 +95,7 @@ export default function Shop() {
                 <br></br>
                 <p>We offer additional support to help you get the most out of the theme you have purchased from us. We are ready to assist you in configuring your store and ensuring that everything is set up to your liking. If you have any questions or need help with setting up your theme contact support and we will be there to help you every step of the way. If there are advanced features that you would like for your specific needs</p>
 
-                <a href="#" className={styles.support_link}>Support</a>
+                <a href="/support" className={styles.support_link}>Support</a>
             </div>
       </main>
      </>

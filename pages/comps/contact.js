@@ -35,7 +35,7 @@ export default function Contact(props){
          [executeRecaptcha]
      )
 
-     const submitContact = async (gReCaptchaToken) => {
+     const submitContact = async (e, gReCaptchaToken) => {
         let {name, email, subject, message} = e.target.elements;
         await axios.post('api/contact', {
             headers: {

@@ -1,0 +1,27 @@
+.info_container{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.support_info1{
+    border: 3px solid white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    width:50%;
+    margin-right: 3rem;
+}
+
+.support_info2{
+    border: 3px solid white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.support_list{
+    list-style: circle;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}

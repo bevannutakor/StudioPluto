@@ -41,15 +41,15 @@ a {
 
 a:hover {
   color: rgb(255, 255, 255);
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+  /*cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;*/
 }
 
 img:hover {
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+  /*cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;*/
 }
 
 button:hover{
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+  /*cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;*/
 }
 
 p{
@@ -96,7 +96,7 @@ ul {
 }
 
 .x:hover{
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+  /*cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;*/
 }
 
 .checkout-container{
