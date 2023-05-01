@@ -27,9 +27,9 @@ export default function Contact(props){
                 setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
                 return;
               }
-              executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-                console.log(gReCaptchaToken, "response Google reCaptcha server");
-                submitContact(e, gReCaptchaToken);
+              executeRecaptcha("enquiryFormSubmit").then(async (gReCaptchaToken) => {
+                //console.log(gReCaptchaToken, "response Google reCaptcha server");
+                await submitContact(e, gReCaptchaToken);
               });
          },
          [executeRecaptcha]
@@ -58,7 +58,7 @@ export default function Contact(props){
             } else {
                 setStatus("Something went wrong with your submission, please try again")
             }
-            //console.log(res.status)
+            console.log(res.status)
         })
      }
     return(
