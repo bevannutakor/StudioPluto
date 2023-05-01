@@ -17,7 +17,7 @@ export default async function contact(req, res){
                   reCaptchaRes,
                   "Response from Google reCaptcha verification API"
                 );
-                if (reCaptchaRes.success === true) {
+                if (reCaptchaRes.score > 0.5) {
                     //send email using node mailer
                     let transporter = nodemailer.createTransport({
                         host: process.env.ZOHO_HOST,
