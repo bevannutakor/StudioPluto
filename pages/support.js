@@ -19,7 +19,7 @@ export default function Support() {
                 setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
                 return;
             }
-            executeRecaptcha("formSubmit").then(async (gReCaptchaToken) => {
+            executeRecaptcha("enquiryFormSubmit").then(async (gReCaptchaToken) => {
                 //console.log(gReCaptchaToken, "response Google reCaptcha server");
                 await submitSupportRequest(e, gReCaptchaToken);
             });
@@ -28,10 +28,10 @@ export default function Support() {
     )
 
     const submitSupportRequest = async (e, gReCaptchaToken) => {
-        const {name, email, shop, description} = e.target.elements
+        let {name, email, shop, description} = e.target.elements
         await axios.post('api/support', {
             headers: {
-                'Content-type': 'application/json'
+                'Content-Type': 'application/json'
             },
 
             name: name.value,
@@ -47,11 +47,13 @@ export default function Support() {
             shop.value = "";
             description.value = "";
             setService("");
+
             if (res.status === 200){
                 setStatus("The form has submitted successfully");
             } else {
                 setStatus("Something went wrong with your submission, please try again")
             }
+            console.log(res)
         })
     };
     return(

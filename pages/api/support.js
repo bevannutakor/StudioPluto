@@ -32,7 +32,7 @@ export default async function handler(res, req){
                         from: process.env.ZOHO_USER,
                         to: process.env.ZOHO_USER,
                         subject: `Support: ${req.body.service}`,
-                        text: `Hello, ${req.body.name} <${req.body.email}> \n Shop Url: ${req.body.shop} \n
+                        text: `${req.body.name} <${req.body.email}> \n Shop Url: ${req.body.shop} \n
                         Description: ${req.body.description}`
                     }
             
