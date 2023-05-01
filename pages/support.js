@@ -28,7 +28,7 @@ export default function Support() {
     )
 
     const submitSupportRequest = async (e, gReCaptchaToken) => {
-        const {name, email, description} = e.target.elements
+        const {name, email, shop, description} = e.target.elements
         await axios.post('api/support', {
             headers: {
                 'Content-type': 'application/json'
@@ -37,6 +37,7 @@ export default function Support() {
             name: name.value,
             email: email.value,
             service: service,
+            shop: shop.value,
             description: description.value,
             gRecaptchaToken: gReCaptchaToken
         }).then((res) => {
@@ -92,7 +93,7 @@ export default function Support() {
                     <input className={styles.input} placeholder="Name" name="name"/>
                     <input className={styles.input} placeholder="Email *" name="email"/>
                 </div>
-                <input className={styles.input} placeholder="Shop URL *"/>
+                <input className={styles.input} placeholder="Shop URL *" name="shop"/>
 
                 <p>Service Needed</p>
                 <br></br>

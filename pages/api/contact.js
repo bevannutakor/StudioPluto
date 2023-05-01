@@ -21,7 +21,7 @@ export default async function contact(req, res){
                     //send email using node mailer
                     let transporter = nodemailer.createTransport({
                         host: process.env.ZOHO_HOST,
-                        secure: false,
+                        secure: true,
                         port: 587,
                         auth: {
                             user: process.env.ZOHO_USER,
@@ -33,7 +33,7 @@ export default async function contact(req, res){
                         from: process.env.ZOHO_USER,
                         to: process.env.ZOHO_USER,
                         subject: req.body.subject,
-                        text: `Hello, ${req.body.name} <${req.body.email}> \n ${req.body.message}`
+                        text: `${req.body.name} <${req.body.email}> \n ${req.body.message}`
                     }
             
                     transporter.sendMail(mailOptions, (error, data) => {

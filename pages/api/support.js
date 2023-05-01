@@ -10,7 +10,7 @@ export default function handler(res, req){
                 },
                 body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${req.body.gRecaptchaToken}`
             })
-            //.then((reCaptchaRes) => reCaptchaRes.json())
+            .then((reCaptchaRes) => reCaptchaRes.json())
             .then((reCaptchaRes) => {
                 console.log(
                   reCaptchaRes,
@@ -20,7 +20,7 @@ export default function handler(res, req){
                     //send email using node mailer
                     let transporter = nodemailer.createTransport({
                         host: process.env.ZOHO_HOST,
-                        secure: false,
+                        secure: true,
                         port: 587,
                         auth: {
                             user: process.env.ZOHO_USER,
@@ -32,7 +32,8 @@ export default function handler(res, req){
                         from: process.env.ZOHO_USER,
                         to: process.env.ZOHO_USER,
                         subject: `Support: ${req.body.service}`,
-                        text: `Hello, ${req.body.name} <${req.body.email}> \n ${req.body.description}`
+                        text: `Hello, ${req.body.name} <${req.body.email}> \n Shop Url: ${req.body.shop} \n
+                        Description: ${req.body.description}`
                     }
             
                     transporter.sendMail(mailOptions, (error, data) => {
