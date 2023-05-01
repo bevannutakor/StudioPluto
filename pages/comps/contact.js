@@ -58,7 +58,6 @@ export default function Contact(props){
             } else {
                 setStatus("Something went wrong with your submission, please try again")
             }
-            console.log(res.status.message)
         })
      }
     return(
