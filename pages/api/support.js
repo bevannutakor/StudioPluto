@@ -8,7 +8,7 @@ export default function handler(res, req){
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
                 },
-                body: `secret=your_secret_key&response=${req.body.gRecaptchaToken}`
+                body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${req.body.gRecaptchaToken}`
             })
             //.then((reCaptchaRes) => reCaptchaRes.json())
             .then((reCaptchaRes) => {

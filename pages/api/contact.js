@@ -9,7 +9,7 @@ export default async function contact(req, res){
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
                 },
-                body: `secret=your_secret_key&response=${req.body.gRecaptchaToken}`
+                body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${req.body.gRecaptchaToken}`
             })
             //.then((reCaptchaRes) => reCaptchaRes.json())
             .then((reCaptchaRes) => {
@@ -54,7 +54,7 @@ export default async function contact(req, res){
                 } else {
                   res.status(400).json({
                     status: "failure",
-                    message: `Google ReCaptcha Failure ${reCaptchaRes.json()}`,
+                    message: `Google ReCaptcha Failure ${reCaptchaRes}`,
                   });
                 }
               })
