@@ -1,4 +1,4 @@
-const stripe = require("stripe")(process.env.STRIPE_TEST_KEY); //change to live key later
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
     if(req.method === "POST"){
@@ -7,7 +7,7 @@ export default async function handler(req, res) {
             const session = await stripe.checkout.sessions.create({
               line_items: [
                 {
-                  price: 'price_1MPHz0GLQKBxwgzeUNbLyC95', //change to actual product
+                  price: 'price_1N2z5kGLQKBxwgze5ZC29f3B',
                   quantity: 1,
                 },
               ],
