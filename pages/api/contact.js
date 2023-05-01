@@ -54,7 +54,7 @@ export default async function contact(req, res){
                 } else {
                   res.status(400).json({
                     status: "failure",
-                    message: `Google ReCaptcha Failure ${reCaptchaRes}`,
+                    message: `Google ReCaptcha Failure ${reCaptchaRes.json()}`,
                   });
                 }
               })
