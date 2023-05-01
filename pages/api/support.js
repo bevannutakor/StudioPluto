@@ -20,7 +20,7 @@ export default function handler(res, req){
                     //send email using node mailer
                     let transporter = nodemailer.createTransport({
                         host: process.env.ZOHO_HOST,
-                        secure: true,
+                        secure: false,
                         port: 587,
                         auth: {
                             user: process.env.ZOHO_USER,
