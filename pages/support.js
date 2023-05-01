@@ -19,9 +19,9 @@ export default function Support() {
                 setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
                 return;
             }
-            executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-                console.log(gReCaptchaToken, "response Google reCaptcha server");
-                submitSupportRequest(e, gReCaptchaToken);
+            executeRecaptcha("formSubmit").then(async (gReCaptchaToken) => {
+                //console.log(gReCaptchaToken, "response Google reCaptcha server");
+                await submitSupportRequest(e, gReCaptchaToken);
             });
         },
         [executeRecaptcha]
@@ -40,13 +40,18 @@ export default function Support() {
             shop: shop.value,
             description: description.value,
             gRecaptchaToken: gReCaptchaToken
+
         }).then((res) => {
+            name.value = "";
+            email.value = "";
+            shop.value = "";
+            description.value = "";
+            setService("");
             if (res.status === 200){
                 setStatus("The form has submitted successfully");
             } else {
                 setStatus("Something went wrong with your submission, please try again")
             }
-            console.log(status);
         })
     };
     return(
@@ -77,11 +82,11 @@ export default function Support() {
 
                 <div className={styles.support_info2}>
                     <h2>What we do not offer</h2>
-                    <ul class={styles.support_list}>
+                    <ul className={styles.support_list}>
                         <li>Changes to design, style or functionality of a theme</li>
                         <li>Integration of theme with third party apps and third party code</li>
                         <li>Troubleshooting previous customizations of theme code by third party</li>
-                        <li></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -108,6 +113,8 @@ export default function Support() {
                 <textarea rows="10" className={styles.input} placeholder="Detailed Description *" name="description"/>
 
                 <button type="submit" className={styles.submit}>Submit</button>
+
+                {status !== "" ? (<p>{status}</p>) : ""}
             </form>
         </>
     )
