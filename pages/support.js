@@ -79,7 +79,7 @@ export default function Support() {
                     <ul class={styles.support_list}>
                         <li>Changes to design, style or functionality of a theme</li>
                         <li>Integration of theme with third party apps and third party code</li>
-                        <li></li>
+                        <li>Troubleshooting previous customizations of theme code by third party</li>
                         <li></li>
                     </ul>
                 </div>

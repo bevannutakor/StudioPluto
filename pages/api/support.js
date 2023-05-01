@@ -1,4 +1,4 @@
-const nodemailer = require('nodmailer');
+const nodemailer = require('nodemailer');
 
 export default function handler(res, req){
     if(req.method === "POST"){
