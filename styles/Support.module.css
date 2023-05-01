@@ -10,6 +10,7 @@
     border-radius: 1.5rem;
     width:50%;
     margin-right: 3rem;
+    background: linear-gradient(to right, #FC5C7D, #6A82FB);
 }
 
 .support_info2{
@@ -24,4 +25,52 @@
     list-style: circle;
     margin-top: 2rem;
     margin-left: 4rem;
+}
+
+.support_list li {
+    color: white;
+    margin-top: 2vh;
+}
+
+.support_form{
+    width: 75%;
+    margin: auto;
+}
+
+.input{
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    margin-bottom: 5vh;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.support_input_group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+    width: 100%;
+}
+
+.submit{
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #4e54c8;
+    color: white;
+    width: 25%;
+    margin-bottom: 3vh;
 }

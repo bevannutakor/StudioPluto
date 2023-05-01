@@ -29,7 +29,7 @@ export default function Contact(props){
               }
               executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
                 console.log(gReCaptchaToken, "response Google reCaptcha server");
-                submitContact(gReCaptchaToken);
+                submitContact(e, gReCaptchaToken);
               });
          },
          [executeRecaptcha]
@@ -56,7 +56,7 @@ export default function Contact(props){
             if (res.status === 200){
                 setStatus("The form has been submitted successfully")
             } else {
-                setStatus("Something went wrong")
+                setStatus("Something went wrong with your submission, please try again")
             }
             //console.log(res.status)
         })
@@ -66,10 +66,10 @@ export default function Contact(props){
             <form onSubmit={handleRecaptcha} className={styles.contact_form}>
                 <span onClick={() => setIsOpen(false)} className={styles.exit}>&times;</span>
                 <h3 className={styles.contact_heading}>Get In Touch</h3>
-                    <div className={styles.name_email_row}>
-                        <input className={styles.input} placeholder="Name" name="name"/>
-                        <input className={styles.input} placeholder="Email*" name="email"/>
-                    </div>
+                <div className={styles.name_email_row}>
+                    <input className={styles.input} placeholder="Name" name="name"/>
+                    <input className={styles.input} placeholder="Email*" name="email"/>
+                </div>
                 
                 <input className={styles.input} placeholder="Subject" name="subject"/>
                 
