@@ -14,7 +14,7 @@ export default async function contact(req, res){
             //.then((reCaptchaRes) => reCaptchaRes.json())
             .then((reCaptchaRes) => {
                 console.log(
-                  reCaptchaRes.score,
+                  reCaptchaRes,
                   "Response from Google reCaptcha verification API"
                 );
                 if (reCaptchaRes.score > 0.5) {
@@ -54,7 +54,7 @@ export default async function contact(req, res){
                 } else {
                   res.status(400).json({
                     status: "failure",
-                    message: "Google ReCaptcha Failure",
+                    message: `Google ReCaptcha Failure ${reCaptchaRes.score}`,
                   });
                 }
               })
