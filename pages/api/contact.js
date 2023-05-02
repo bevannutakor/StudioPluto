@@ -64,7 +64,5 @@ export default async function contact(req, res){
                 message: "There was an error submitting the form",
             });
         }
-
-        return res;
     }
 }
