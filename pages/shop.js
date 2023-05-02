@@ -36,22 +36,9 @@ export default function Shop() {
       <Navbar />
 
       <main className={styles.main}>
-            {/*<Image 
-            src={Shopify}
-            alt="Shopify Theme Coming Soon"
-            width="1243px"
-            height="976px"
-            style={styles.image}
-            layout="responsive"
-            />*/}
 
             <div className={styles.product_container}>
-                {/*<div className={styles.product_image_container}>
-                  <div className={styles.product_image}>
-                    
-                  </div>
-                </div>*/}
-
+                
                 <div className={styles.product_description_container}>
                   <h1 className={styles.intro_title}>Pluto Shopify Theme</h1>
                   

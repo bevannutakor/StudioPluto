@@ -2,5 +2,8 @@
   "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/theme_docs/ThemeSettings": "pages/theme_docs/ThemeSettings.js",
+  "/web": "pages/web.js",
+  "/shop": "pages/shop.js"
 }

@@ -5,7 +5,7 @@
 }
 
 .exit:hover{
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+    cursor: pointer
 }
 
 .contact_heading{
@@ -24,7 +24,7 @@
 }
 
 .input:hover{
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=184088), move;
+    cursor: pointer;
 }
 
 .input::placeholder{
