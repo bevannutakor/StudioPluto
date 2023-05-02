@@ -36,7 +36,7 @@ export default function Support() {
 
             name: name.value,
             email: email.value,
-            //service: service,
+            service: service,
             shop: shop.value,
             description: description.value,
             gRecaptchaToken: gReCaptchaToken
