@@ -29,11 +29,9 @@ export default function Support() {
 
     const submitSupportRequest = async (e, gReCaptchaToken) => {
         let {name, email, shop, description} = e.target.elements
+        const headers = {'Content-Type': 'application/json'}
         await axios.post('api/support', {
-            headers: {
-                'Content-Type': 'application/json'
-            },
-
+            headers,
             name: name.value,
             email: email.value,
             service: service,
