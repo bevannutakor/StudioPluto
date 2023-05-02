@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-export default async function handler(res, req){
+export default async function support(res, req){
     if(req.method === "POST"){
         try{
             fetch("https://www.google.com/recaptcha/api/siteverify", {

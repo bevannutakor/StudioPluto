@@ -75,3 +75,38 @@
     margin-bottom: 3vh;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 840px)
+{
+    .info_container{
+        display: block;
+        padding: 1rem;
+    }
+
+    .support_info1{
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .support_info2{
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .support_list{
+        margin-left: 0;
+    }
+
+    .support_form{
+        width: 90%;
+    }
+
+    .support_input_group{
+        display: block;
+    }
+
+    .submit{
+        width: 50%;
+    }
+}

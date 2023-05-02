@@ -36,7 +36,7 @@ export default function Support() {
 
             name: name.value,
             email: email.value,
-            service: service,
+            //service: service,
             shop: shop.value,
             description: description.value,
             gRecaptchaToken: gReCaptchaToken
@@ -53,7 +53,8 @@ export default function Support() {
             } else {
                 setStatus("Something went wrong with your submission, please try again")
             }
-            console.log(res)
+        }).catch(error => {
+            console.log(error);
         })
     };
     return(
@@ -74,7 +75,7 @@ export default function Support() {
             <div className={styles.info_container}>
                 <div className={styles.support_info1}>
                     <h2>What we offer</h2>
-                    <ul class={styles.support_list}>
+                    <ul className={styles.support_list}>
                         <li>Answering Questions about the Studio Pluto Theme</li>
                         <li>Help with installing the theme and familiarization with theme settings</li>
                         <li>Fixing bugs that are present in unmodified theme installs</li>
