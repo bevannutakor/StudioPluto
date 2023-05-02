@@ -4,7 +4,7 @@ export default async function contact(req, res){
     if(req.method === "POST"){
 
         try{
-            fetch("https://www.google.com/recaptcha/api/siteverify", {
+            await fetch("https://www.google.com/recaptcha/api/siteverify", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
