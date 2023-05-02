@@ -1,9 +1,6 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/theme_docs/ThemeSettings": "pages/theme_docs/ThemeSettings.js",
-  "/web": "pages/web.js",
-  "/shop": "pages/shop.js"
+  "/theme_docs/Sections": "pages/theme_docs/Sections.js"
 }

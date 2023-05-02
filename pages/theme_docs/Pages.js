@@ -23,14 +23,14 @@ export default function ThemePages(){
                     <h3>Pages</h3>
                     <br></br>
                     <div className={styles.documentation_heading_paragraph}>
-                        <p>The pages detailed below can use the sections described <a className={styles.doc_sublink} href="/SectionSettings">here.</a> These pages are essential to your shopify store and somme will be the main way people purchase your products</p>
+                        <p>The pages detailed below can use the sections described <a className={styles.doc_sublink} href="/theme_docs/Sections">here.</a> These pages are essential to your shopify store and somme will be the main way people purchase your products</p>
                     </div>
 
                     <div className={styles.documentation_section}>
                         <h4>Home Page</h4>
                         <br></br>
                         <hr></hr>
-                        <p className={styles.documentation_text}>The home page is where your customers first land when they arrive on your website. Use the <a className={styles.doc_sublink} href="/SectionSettings">sections</a> to fully customize your home page.</p>
+                        <p className={styles.documentation_text}>The home page is where your customers first land when they arrive on your website. Use the <a className={styles.doc_sublink} href="/theme_docs/Sections">sections</a> to fully customize your home page.</p>
                     </div>
 
                     <div className={styles.documentation_section}>
@@ -39,7 +39,7 @@ export default function ThemePages(){
                         <hr></hr>
                         <p className={styles.documentation_text}>The product page is the template page for displaying all your products at once and showing each individual collection. You can customize how many items you want to display per row, allow for product filtering and adding padding around items.</p>
                         
-                            <p className={styles.documentation_text}>This page also allows you to add <a className={styles.doc_sublink} href="/theme_docs/SectionSettings">sections</a> for each of your different collections. If you have sections you want to add but don't want those sections to show for some collections you need to create something called a template and then assign a specific collection to it.</p>
+                            <p className={styles.documentation_text}>This page also allows you to add <a className={styles.doc_sublink} href="/theme_docs/Sections">sections</a> for each of your different collections. If you have sections you want to add but don't want those sections to show for some collections you need to create something called a template and then assign a specific collection to it.</p>
 
                             <ul className={styles.documentation_list}>
                                 <li>Click "collections" page in your store editor page navigation</li>
@@ -58,10 +58,10 @@ export default function ThemePages(){
                         <ul className={styles.documentation_list}>
                             <li>In your shopify admin go to online store then pages</li>
                             <li>There you will see a button that allows you to create new pages</li>
-                            <li>You can also add your <a className={styles.doc_sublink} href="/theme_docs/SectionSettings">sections</a> to these pages, you can create templates in the same way that you do for the collections pages</li>
+                            <li>You can also add your <a className={styles.doc_sublink} href="/theme_docs/Sections">sections</a> to these pages, you can create templates in the same way that you do for the collections pages</li>
                         </ul>
                         <div className={styles.documentation_heading_paragraph}>
-                            <p>Note: If you choose to have a blog on your website the the settings for creating a blog post are the same as creating pages, but in your shopify admin you must go to "Online Store" then "Blog posts." You can also create templates for these as well when you are adding shopify <a className={styles.doc_sublink} href="/theme_docs/SectionSettings">sections</a></p>
+                            <p>Note: If you choose to have a blog on your website the the settings for creating a blog post are the same as creating pages, but in your shopify admin you must go to "Online Store" then "Blog posts." You can also create templates for these as well when you are adding shopify <a className={styles.doc_sublink} href="/theme_docs/Sections">sections</a></p>
                         </div>
                     </div>
 

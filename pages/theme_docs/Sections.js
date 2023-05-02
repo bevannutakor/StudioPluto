@@ -37,7 +37,7 @@ export default function ThemeSections(){
                             <li>Youtube link</li>
                         </ul>
                         <div className={styles.documentation_heading_paragraph} >
-                            <p>Note: You can upload video files to your shopify store and copy the link into the self hosted video link. <a href="#" className={styles.doc_sublink}>See more</a></p>
+                            <p>Note: You can upload video files to your shopify store and copy the link into the self hosted video link. <a href="/theme_docs/Media" className={styles.doc_sublink}>See more</a></p>
                         </div>
                         <p className={styles.documentation_text}>There are also more general customizations that you can make to the carousel section by selecting "carousel" in the sections tab. Here you can: </p>
 
@@ -115,7 +115,7 @@ export default function ThemeSections(){
                         <p className={styles.documentation_text}>Add either a self hosted video url or a youtube url. With the video your select you can choose to have it autoplay. Overlaying text on the video is also an option.</p>
 
                         <div className={styles.documentation_heading_paragraph} >
-                            <p>Note: Learn how to upload a video file on to shopify and use the link inside this section <a href="/Media" className={styles.doc_sublink}>here</a></p>
+                            <p>Note: Learn how to upload a video file on to shopify and use the link inside this section <a href="/theme_docs/Media" className={styles.doc_sublink}>here</a></p>
                         </div>
                     </div>
 

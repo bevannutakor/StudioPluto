@@ -52,18 +52,14 @@ export default function SetupStore(){
                     <p className={styles.external_doc_links}>
                         <a href="https://help.shopify.com/en/manual/apps/installing-apps">Apps</a>
                     </p>
-                    <div className={styles.documentation_section}>
-                        <h4>Upload your theme</h4>
-                        <br></br>
-                        <hr></hr>
-                        <p className={styles.documentation_text}></p>
-                        
-                    </div>
+
+                    <p className={styles.external_doc_links}>
+                        <a href="https://help.shopify.com/en/manual/online-store/themes/adding-themes#:~:text=In%20the%20Theme%20library%20section%2C%20click%20Add%20theme%2C%20and%20then,Themes%20page%20of%20your%20admin.">Upload Your Theme Zip File</a>
+                    </p>
 
                     <div className={styles.setup_warning}>
                         <p>Note: While we do offer support for theme customization and theme assets we do not offer support for third-party apps or third-party code installations.</p>
                     </div>
-
                     
                 </div>
             </main>

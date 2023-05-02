@@ -30,7 +30,7 @@ export default function ThemeSettings(){
                         <h4>Alternate Landing Page</h4>
                         <br></br>
                         <hr></hr>
-                        <p className={styles.documentation_text}> By default the landing page displayed is the one that has all the sections that are added by default check the <a className={styles.doc_sublink} href="/SectionSettings">sections</a> page to learn more. The alternate landing page gives the ability to have a more minimalist feel. After selecting the checkbox enabling the alternate landing page will display all the elements that are given in the following settings:</p>
+                        <p className={styles.documentation_text}> By default the landing page displayed is the one that has all the sections that are added by default check the <a className={styles.doc_sublink} href="/theme_docs/Sections">sections</a> page to learn more. The alternate landing page gives the ability to have a more minimalist feel. After selecting the checkbox enabling the alternate landing page will display all the elements that are given in the following settings:</p>
                         <ul className={styles.documentation_list}>
                             <li>Choose a background image</li>
                             <li>Choose a background video - this will overide the background image</li>
