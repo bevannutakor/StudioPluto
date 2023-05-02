@@ -4,9 +4,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from './comps/navbar'
 import { Canvas } from '@react-three/fiber'
-//import { OrbitControls } from '@react-three/drei'
-import Spline from '@splinetool/react-spline';
-//import Sphere from './comps/Sphere';
 import Contact from './comps/contact';
 
 import { useFrame } from '@react-three/fiber';

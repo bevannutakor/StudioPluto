@@ -78,7 +78,7 @@ export default function Contact(props){
                 <h3 className={styles.contact_heading}>Get In Touch</h3>
                 <div className={styles.name_email_row}>
                     <input className={styles.input} placeholder="Name" name="name"/>
-                    <input className={styles.input} placeholder="Email*" name="email"/>
+                    <input className={styles.input} placeholder="Email*" name="email" type="email"/>
                 </div>
                 
                 <input className={styles.input} placeholder="Subject" name="subject"/>

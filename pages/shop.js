@@ -58,7 +58,7 @@ export default function Shop() {
                   <p>A fully customizable theme for your Shopify store, designed to meet the latest standards in web design. you have the flexibility to create a unique and visually appealing website that effectively showcases your brand and products. </p>
                   
                   <form action="/api/theme_checkout_sessions" method="POST" className={styles.buy_container}>
-                    <button type="submit" role="link" className={styles.buy} >$50 USD</button>
+                    <button type="submit" role="link" className={styles.buy} >Purchase Now - $50 USD</button>
                   </form>
                 </div>
                 

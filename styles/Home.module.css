@@ -92,7 +92,6 @@
   flex-basis: 40%;
   padding: 5rem 3rem;
   border-radius: 1.5rem;
-  background: #0d1117;
   margin-bottom: 10vh;
   font-size: 1.25rem;
   font-weight: 500;
@@ -150,7 +149,7 @@
 }
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 840px){
   .home_about_container{
     border: none;
     height: 100%;
