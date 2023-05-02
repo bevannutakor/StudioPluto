@@ -64,5 +64,7 @@ export default async function support(res, req){
                 message: "There was an error submitting the form",
             });
         }
+
+        res.status(500).json({message: "There was an issue with this request"})
     }
 }
