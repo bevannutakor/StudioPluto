@@ -67,6 +67,16 @@
     width: 25%;
 }
 
+.status{
+    margin-top: 3vh;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
 @media only screen and (max-width: 480px){
     .submit{
         width: 100%;

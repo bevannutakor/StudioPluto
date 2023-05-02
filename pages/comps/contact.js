@@ -20,27 +20,22 @@ export default function Contact(props){
         }
      }
 
-     const handleRecaptcha = useCallback(
-         (e) => {
-             e.preventDefault();
-             if (!executeRecaptcha) {
-                setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
-                return;
-              }
-              executeRecaptcha("enquiryFormSubmit").then(async (gReCaptchaToken) => {
-                //console.log(gReCaptchaToken, "response Google reCaptcha server");
-                await submitContact(e, gReCaptchaToken);
-              });
-         },
-         [executeRecaptcha]
-     )
-
      const submitContact = async (e, gReCaptchaToken) => {
         let {name, email, subject, message} = e.target.elements;
+        const headers ={'Content-Type': 'application/json'}
+
+        //validate form
+        let regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
+        if(!regex.test(email)){
+            setStatus("You email is invalid");
+            return;
+        }
+        if(message.value === ""){
+            setStatus("The message field is required")
+            return;
+        }
         await axios.post('api/contact', {
-            headers: {
-                'Content-Type': 'application/json'
-            },
+            headers,
             name: name.value,
             email: email.value,
             subject: subject.value,
@@ -61,6 +56,21 @@ export default function Contact(props){
             console.log(res.json())
         })
      }
+
+     const handleRecaptcha = useCallback(
+        (e) => {
+            e.preventDefault();
+            if (!executeRecaptcha) {
+               setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
+               return;
+             }
+             executeRecaptcha("enquiryFormSubmit").then(async (gReCaptchaToken) => {
+               //console.log(gReCaptchaToken, "response Google reCaptcha server");
+               await submitContact(e, gReCaptchaToken);
+             });
+        },
+        [executeRecaptcha]
+    )
     return(
         <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}  style={modalCustomStyles}>
             <form onSubmit={handleRecaptcha} className={styles.contact_form}>
@@ -77,7 +87,7 @@ export default function Contact(props){
 
                 <button type="submit" className={styles.submit}>Submit</button>
                 <br></br>
-                {status !== "" ? (<p>{status}</p>) : ""}
+                {status !== "" ? (<p className={styles.status}>{status}</p>) : ""}
             </form>
         </Modal>
     )

@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React, {useEffect, useState, useCallback} from 'react';
 import Head from 'next/head';
 import Navbar from './comps/navbar'
 
@@ -11,25 +11,34 @@ export default function Support() {
     const [status, setStatus] = useState("");
     const [service, setService] = useState("-");
     const { executeRecaptcha } = useGoogleReCaptcha();
-    
-    const handleRecaptcha = useCallback(
-        (e) => {
-            e.preventDefault();
-            if (!executeRecaptcha) {
-                setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
-                return;
-            }
-            executeRecaptcha("enquiryFormSubmit").then(async (gReCaptchaToken) => {
-                //console.log(gReCaptchaToken, "response Google reCaptcha server");
-                await submitSupportRequest(e, gReCaptchaToken);
-            });
-        },
-        [executeRecaptcha]
-    )
+
+    //to make sure that select is updating before user submits
+    useEffect(() => {
+        console.log(service);
+    }, [service]);
 
     const submitSupportRequest = async (e, gReCaptchaToken) => {
         let {name, email, shop, description} = e.target.elements
         const headers = {'Content-Type': 'application/json'}
+        
+        //check the email validity and required fields
+        let regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
+
+        if(!regex.test(email.value)){
+            setStatus("Your email is invalid")
+            return;
+        }
+
+        if(shop.value === ""){
+            setStatus("Shop URL field is required!")
+            return;
+        }
+
+        if(description.value === ""){
+            setStatus("The description field is required!")
+            return;
+        }
+
         await axios.post('api/support', {
             headers,
             name: name.value,
@@ -55,6 +64,21 @@ export default function Support() {
             console.log(error);
         })
     };
+
+    const handleRecaptcha = useCallback(
+        (e) => {
+            e.preventDefault();
+            if (!executeRecaptcha) {
+                setStatus("Something went wrong with the recaptcha: ", executeRecaptcha);
+                return;
+            }
+            executeRecaptcha("enquiryFormSubmit").then(async (gReCaptchaToken) => {
+                await submitSupportRequest(e, gReCaptchaToken);
+            });
+        },
+        [executeRecaptcha]
+    )
+
     return(
         <>
             <Head>
@@ -97,7 +121,7 @@ export default function Support() {
                 <br></br>
                 <div className={styles.support_input_group}>
                     <input className={styles.input} placeholder="Name" name="name"/>
-                    <input className={styles.input} placeholder="Email *" name="email"/>
+                    <input className={styles.input} placeholder="Email *" name="email" type="email"/>
                 </div>
                 <input className={styles.input} placeholder="Shop URL *" name="shop"/>
 
@@ -115,7 +139,7 @@ export default function Support() {
 
                 <button type="submit" className={styles.submit}>Submit</button>
 
-                {status !== "" ? (<p>{status}</p>) : ""}
+                {status !== "" ? (<p className={styles.status}>{status}</p>) : ""}
             </form>
         </>
     )
