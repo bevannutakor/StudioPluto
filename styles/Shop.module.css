@@ -160,6 +160,20 @@
     color: #4e54c8;
 }
 
+.demo_button{
+    display: flex;
+    justify-content: center;
+}
+
+.demo_button a{
+    padding: 1rem 5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    background: #4e54c8;
+    margin-bottom: 13vh;
+}
+
 @media only screen and (max-width: 840px){
     .product_container{
         display: block;
