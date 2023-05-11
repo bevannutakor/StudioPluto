@@ -1,10 +1,14 @@
-import React, {useState, useEffect} from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import Shopify from '../src/SHOPIFY.gif'
-import Navbar from './comps/navbar'
-import styles from '../styles/Shop.module.css'
+import React, {useState, useEffect} from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Modal from 'react-modal';
+import Navbar from './comps/navbar';
+import styles from '../styles/Shop.module.css';
 
+import PreviewOne from '../src/ThemePreview1.png';
+import PreviewTwo from '../src/ThemePreview2.png';
+import PreviewThree from '../src/ThemePreview3.png';
+import PreviewFour from '../src/ThemePreview4.png';
 
 export default function Shop() {
   useEffect(() => {
@@ -18,6 +22,7 @@ export default function Shop() {
       console.log('Order canceled -- continue to shop around and checkout when you’re ready.');
     }
   }, [])
+
   return (
     <div>
       <>
@@ -60,6 +65,28 @@ export default function Shop() {
                 </div>
             </div>
             <div className={styles.demo_container}>
+                <div className={styles.demo_images}>
+                    <Image 
+                        src={PreviewOne}
+                        alt="Shopify Theme Demo Image"
+                        layout="responsive"
+                    />
+                    <Image 
+                        src={PreviewTwo}
+                        alt="Shopify Theme Demo Image"
+                        layout="responsive"
+                    />
+                    <Image 
+                        src={PreviewThree}
+                        alt="Shopify Theme Demo Image"
+                        layout="responsive"
+                    />
+                    <Image 
+                        src={PreviewFour}
+                        alt="Shopify Theme Demo Image"
+                        layout="responsive"
+                    />
+                </div>
                 <div className={styles.demo_button}>
                     <a target="_blank" href="https://studioplutodemo.myshopify.com/">See the demo</a>
                 </div>

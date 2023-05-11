@@ -160,6 +160,17 @@
     color: #4e54c8;
 }
 
+.demo_images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+    grid-gap: 3rem;
+}
+
+.demo_images img{
+    border-radius: 1.5rem;
+}
+
 .demo_button{
     display: flex;
     justify-content: center;
@@ -217,5 +228,13 @@
     .support_container{
         height: 100%;
         padding: 2rem 2rem;
+    }
+
+    .demo_images{
+        display: block;
+    }
+
+    .demo_images img{
+        margin-bottom: 2rem;
     }
 }
