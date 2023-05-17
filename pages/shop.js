@@ -88,7 +88,7 @@ export default function Shop() {
                     />
                 </div>
                 <div className={styles.demo_button}>
-                    <a target="_blank" href="https://studioplutodemo.myshopify.com/">See the demo</a>
+                    <a target="_blank" href="https://4e3947.myshopify.com/">See the demo</a>
                 </div>
             </div>
             <div className={styles.more_info_container}>
