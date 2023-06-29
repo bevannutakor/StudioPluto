@@ -25,11 +25,11 @@ export default function Contact(props){
         const headers ={'Content-Type': 'application/json'}
 
         //validate form
-        let regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
+        /*let regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
         if(!regex.test(email)){
             setStatus("You email is invalid");
             return;
-        }
+        }*/
         if(message.value === ""){
             setStatus("The message field is required")
             return;
